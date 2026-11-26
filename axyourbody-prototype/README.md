@@ -8,6 +8,8 @@
 
 검증 결과와 한계는 [standalone-handoff.md](docs/standalone-handoff.md), 5인 TF의 30개 시나리오 비교는 [tf-review-30.md](docs/tf-review-30.md)를 확인합니다.
 
+최신 개선·검증 내역: [AZTKS 검토 후 개선](docs/aztks-improvements.md).
+
 ## 먼저 읽을 파일
 
 1. [서비스 구조 설명서](context/service-structure.md)

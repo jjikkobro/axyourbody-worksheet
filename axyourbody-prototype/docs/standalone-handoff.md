@@ -8,6 +8,8 @@
 
 주요 변경은 같은 조건의 체성분 기록만 기본 추세선으로 연결, 계획 저장 버튼 명확화, 모바일의 빠른 결정 경로, AI 선택지와 시연 도구 분리, 한글 검색·키보드 초점·로컬 저장 오류 처리다.
 
+AZTKS 후속 검토의 5개 개선과 최신 검증 기록: [aztks-improvements.md](aztks-improvements.md).
+
 ## 실행
 
 `../prototype-merged.html` 한 파일을 브라우저에서 직접 연다. 별도 빌드·서버·CDN 연결이 필요 없다. 크기 약 325KB이며 HTML·CSS·JavaScript·SVG 아이콘·한글 글꼴·가상 원본 데이터가 파일 안에 포함되어 있다.
