@@ -751,8 +751,8 @@ Day 3에 시작해 Day 4까지 이어 씁니다. 파일 경로와 파일 이름�
 |---|---|---|---|---|---|---|
 | 첫 프로토타입 · | axyourbody-prototype/prototype-first-테마이름.html | DESIGN-테마이름.md | Day 3 (첫 프로토타입 지시문 → 상태 화면·신뢰 요소 추가 지시문) | | | |
 | 첫 프로토타입 · | axyourbody-prototype/prototype-first-테마이름.html | DESIGN-테마이름.md | Day 3 (테마별 프로토타입 추가 생성 지시문 → 상태 화면·신뢰 요소 추가 지시문) | | | |
-| 통합 프로토타입 | axyourbody-prototype/prototype-merged.html | | Day 4 · 4.2 (여러 테마 버전 통합 지시문) | | | |
-| 통합 프로토타입 + 디자인 스킬 | axyourbody-prototype/prototype-merged.html | | Day 4 · 4.3 (외부 디자인 요소 보강 지시문) | | | |
+| 통합 프로토타입 | axyourbody-prototype/20261126-정정훈-AXYOURBODY프로토타입.html | | Day 4 · 4.2 (여러 테마 버전 통합 지시문) | | | |
+| 통합 프로토타입 + 디자인 스킬 | axyourbody-prototype/20261126-정정훈-AXYOURBODY프로토타입.html | | Day 4 · 4.3 (외부 디자인 요소 보강 지시문) | | | |
 | 개선 프로토타입 | axyourbody-prototype/prototype-improved.html | | Day 4 · 4.4 (사용성 테스트 결과 반영 개선 지시문) | | | |
 | 최종 프로토타입 | axyourbody-prototype/prototype-final.html | | Day 4 · 4.6 (테마 일체감 통합 지시문) | | | |
 | 나만의 DESIGN.md | axyourbody-prototype/my-own-DESIGN.md | | Day 4 · 4.6 (나만의 DESIGN.md 명세 추출 지시문 → 나만의 DESIGN.md 단독 문서 보강 지시문) | | | |

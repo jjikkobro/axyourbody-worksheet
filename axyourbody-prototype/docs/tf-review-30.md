@@ -63,7 +63,7 @@
 
 ## 최종 파일과 재현
 
-- 최종 파일: [`../prototype-merged.html`](../prototype-merged.html). HTML·CSS·JavaScript·SVG·부분집합 글꼴·가상 CSV가 한 파일에 있다. 실제 AI API, 서버 저장, 의료 판단 기능은 없다.
+- 최종 파일: [`../20261126-정정훈-AXYOURBODY프로토타입.html`](../20261126-정정훈-AXYOURBODY프로토타입.html). HTML·CSS·JavaScript·SVG·부분집합 글꼴·가상 CSV가 한 파일에 있다. 실제 AI API, 서버 저장, 의료 판단 기능은 없다.
 - 기존안 재현: `git show a1bb114:axyourbody-prototype/prototype-merged.html > /tmp/axyourbody-baseline.html`.
 - Node.js와 Playwright, Chromium이 설치된 환경에서 `node verification/tf-30-simulations.cjs` 실행. 필요하면 `PLAYWRIGHT_MODULE`, `CHROMIUM_PATH`, `BASELINE_HTML` 환경변수로 경로를 지정한다.
 - 비교에 사용한 SHA-256: 기존안 `c39a90ad0a6c339b5555ea1ea229dfe01451f8d7b18912bad6205250c7aa8405`, 최종안 `9dcf36a8b8f928f9d78bdbeb432a367d64843d5579dce831ab8be1ac025940e7`.

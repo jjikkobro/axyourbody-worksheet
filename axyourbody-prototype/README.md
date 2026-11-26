@@ -4,7 +4,7 @@
 
 ## 실행할 파일
 
-[prototype-merged.html](prototype-merged.html)을 브라우저에서 직접 엽니다. Clear Guidance 기준의 반응형 단일 파일이며, 폰트·아이콘·가상 원본 데이터가 포함되어 네트워크 없이 동작합니다.
+[20261126-정정훈-AXYOURBODY프로토타입.html](20261126-정정훈-AXYOURBODY프로토타입.html)을 브라우저에서 직접 엽니다. Clear Guidance 기준의 반응형 단일 파일이며, 폰트·아이콘·가상 원본 데이터가 포함되어 네트워크 없이 동작합니다.
 
 검증 결과와 한계는 [standalone-handoff.md](docs/standalone-handoff.md), 5인 TF의 30개 시나리오 비교는 [tf-review-30.md](docs/tf-review-30.md)를 확인합니다.
 

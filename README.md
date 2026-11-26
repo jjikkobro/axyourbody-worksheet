@@ -3,5 +3,5 @@ AXWAVE
 
 ## AX YOUR BODY 프로토타입
 
-- [반응형 스탠드얼론 HTML](axyourbody-prototype/prototype-merged.html)
+- [반응형 스탠드얼론 HTML](axyourbody-prototype/20261126-정정훈-AXYOURBODY프로토타입.html)
 - [5인 TF·30개 시나리오 비교 결과](axyourbody-prototype/docs/tf-review-30.md)

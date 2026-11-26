@@ -12,7 +12,7 @@ AZTKS 후속 검토의 5개 개선과 최신 검증 기록: [aztks-improvements.
 
 ## 실행
 
-`../prototype-merged.html` 한 파일을 브라우저에서 직접 연다. 별도 빌드·서버·CDN 연결이 필요 없다. 크기 약 325KB이며 HTML·CSS·JavaScript·SVG 아이콘·한글 글꼴·가상 원본 데이터가 파일 안에 포함되어 있다.
+`../20261126-정정훈-AXYOURBODY프로토타입.html` 한 파일을 브라우저에서 직접 연다. 별도 빌드·서버·CDN 연결이 필요 없다. 크기 약 325KB이며 HTML·CSS·JavaScript·SVG 아이콘·한글 글꼴·가상 원본 데이터가 파일 안에 포함되어 있다.
 
 ## 반영 범위
 
