@@ -6,7 +6,7 @@
 
 [prototype-merged.html](prototype-merged.html)을 브라우저에서 직접 엽니다. Clear Guidance 기준의 반응형 단일 파일이며, 폰트·아이콘·가상 원본 데이터가 포함되어 네트워크 없이 동작합니다.
 
-검증 결과와 한계는 [standalone-handoff.md](docs/standalone-handoff.md)를 확인합니다.
+검증 결과와 한계는 [standalone-handoff.md](docs/standalone-handoff.md), 5인 TF의 30개 시나리오 비교는 [tf-review-30.md](docs/tf-review-30.md)를 확인합니다.
 
 ## 먼저 읽을 파일
 
@@ -28,20 +28,11 @@
 - docs/theme-application.md: 테마 파일 대응·적용 제안·비교 양식.
 - data/: m-athlete 가상 CSV 4개와 출처. 실제 운동 계획·상담 원문은 없음.
 - references/: 화면 흐름 워크시트 HTML과 사용자 제공 원본 SVG. 앱 자체의 프로토타입이 아님.
-- MANIFEST.json: 파일별 SHA-256과 출처를 검증하기 위한 목록.
-
-## 작업 시작 지시문
-
-context/service-structure.md, SCREEN_SPEC.md, context/screen-flow.md를 먼저 읽어 주세요.
-핵심 과업 1~3에 대해 배치안 2~3개를 제시해 주세요. 파일은 아직 만들지 마세요.
-배치안별 필수 7개 화면의 영역·정보·요소 유형·필수 동작을 표로 보여 주세요.
-확정 기준과 미정 사항을 구분하고, 계획·상담 샘플을 실제 기록처럼 만들지 마세요.
-제가 배치를 정하면 각 테마의 디자인 파일 하나씩 적용해 별도 HTML 시안을 만듭니다.
+- MANIFEST.json: 초기 자료 묶음 20개 파일의 SHA-256과 출처를 검증하기 위한 당시 목록. 현재 전체 파일의 목록은 아님.
 
 ## 현재 상태
 
-화면·지표 7개 결정은 완료했다. SCREEN_SPEC.md의 세부 작성안·상태 제안·배치는 추가 검토 대상이다.
-Stitch에서 받은 과업 1의 세 테마 원본은 stitch-review/에 보존했다. 현재 prototype-merged.html에 Clear Guidance 기준의 필수 화면 7개와 부수 상담 입력을 연결했다. 실제 사용자 대상 사용성 테스트와 Figma 반영은 완료하지 않았다.
-references/02-screen-flow-1.html은 문서 구조 검사만 했으며 브라우저 시각 검증은 시스템 라이브러리 부재로 미실시다.
+화면·지표 7개 결정과 Clear Guidance 기준의 필수 화면 7개, 부수 상담 입력을 단일 HTML에 구현했다. 5개 역할의 AI 에이전트가 제안한 30개 시나리오를 오프라인 Chromium에서 기존안·개선안에 실행했고, 개선안이 내부 가중 평가에서 최고 점수였다. 실제 사용자 대상 사용성 테스트나 Figma 반영 결과는 아니다.
+Stitch에서 받은 과업 1의 세 테마 원본은 stitch-review/에 보존했다.
 
 이 ZIP은 로컬 전달용 자료 묶음이며 저장소·게시 사이트·메일·외부 서비스에 자동 업로드하지 않는다.

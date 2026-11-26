@@ -1,0 +1,502 @@
+{
+  "method": "30 scripted scenario checks on baseline and final HTML; not human usability testing",
+  "date": "2026-11-26T07:10:39.795Z",
+  "variants": {
+    "baseline": {
+      "score": 31,
+      "possible": 132,
+      "passed": 7,
+      "total": 30,
+      "results": [
+        {
+          "id": "P01",
+          "role": "기획·안전",
+          "weight": 5,
+          "title": "비표준 10/22 값이 기본 추세선에 섞이지 않음",
+          "passed": false,
+          "error": ""
+        },
+        {
+          "id": "P02",
+          "role": "기획·안전",
+          "weight": 5,
+          "title": "AI 고정 예시가 컨디션 계산값처럼 보이지 않음",
+          "passed": false,
+          "error": ""
+        },
+        {
+          "id": "P03",
+          "role": "기획·안전",
+          "weight": 4,
+          "title": "AI 제안 적용은 저장 전 초안으로 남음",
+          "passed": true,
+          "error": ""
+        },
+        {
+          "id": "P04",
+          "role": "기획·안전",
+          "weight": 5,
+          "title": "계획 주요 버튼이 저장 행동을 정확히 명명",
+          "passed": false,
+          "error": ""
+        },
+        {
+          "id": "P05",
+          "role": "기획·안전",
+          "weight": 4,
+          "title": "수면 누락 안내 버튼이 입력 기능처럼 보이지 않음",
+          "passed": false,
+          "error": ""
+        },
+        {
+          "id": "P06",
+          "role": "기획·안전",
+          "weight": 4,
+          "title": "가상 코치 상담의 허구 출처를 상세에 표시",
+          "passed": true,
+          "error": ""
+        },
+        {
+          "id": "U01",
+          "role": "UX·비주얼",
+          "weight": 5,
+          "title": "모바일 첫 화면에서 AI와 저장 경로 발견",
+          "passed": false,
+          "error": "locator.boundingBox: Timeout 1500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.quick-actions')\u001b[22m\n"
+        },
+        {
+          "id": "U02",
+          "role": "UX·비주얼",
+          "weight": 5,
+          "title": "계획 저장 결과에 저장 시각과 범위 표시",
+          "passed": false,
+          "error": ""
+        },
+        {
+          "id": "U03",
+          "role": "UX·비주얼",
+          "weight": 4,
+          "title": "AI 선택 세 가지를 동등한 행동으로 제시",
+          "passed": false,
+          "error": ""
+        },
+        {
+          "id": "U04",
+          "role": "UX·비주얼",
+          "weight": 4,
+          "title": "그래프 제목이 비교 조건을 명시",
+          "passed": false,
+          "error": ""
+        },
+        {
+          "id": "U05",
+          "role": "UX·비주얼",
+          "weight": 3,
+          "title": "프로토타입 상태 시연을 접힌 도구로 분리",
+          "passed": false,
+          "error": ""
+        },
+        {
+          "id": "U06",
+          "role": "UX·비주얼",
+          "weight": 4,
+          "title": "상담 빈 상태에서 직접 입력과 가상 예시 모두 선택 가능",
+          "passed": false,
+          "error": ""
+        },
+        {
+          "id": "D01",
+          "role": "데이터·지표",
+          "weight": 5,
+          "title": "전체 목록 8건과 표준 비교 7건을 구분",
+          "passed": false,
+          "error": ""
+        },
+        {
+          "id": "D02",
+          "role": "데이터·지표",
+          "weight": 5,
+          "title": "10/22 제외 저장 후 원본 값은 목록에 남음",
+          "passed": true,
+          "error": ""
+        },
+        {
+          "id": "D03",
+          "role": "데이터·지표",
+          "weight": 5,
+          "title": "고정 AI 제안과 실제 CSV 근거의 의미를 분리",
+          "passed": false,
+          "error": ""
+        },
+        {
+          "id": "D04",
+          "role": "데이터·지표",
+          "weight": 4,
+          "title": "75분도 시연 계획의 가상 값으로 표기",
+          "passed": false,
+          "error": ""
+        },
+        {
+          "id": "D05",
+          "role": "데이터·지표",
+          "weight": 5,
+          "title": "목표 우선순위와 측정 1RM 의미 유지",
+          "passed": true,
+          "error": ""
+        },
+        {
+          "id": "D06",
+          "role": "데이터·지표",
+          "weight": 4,
+          "title": "측정하지 않은 사용성 성공률을 UI에 표시하지 않음",
+          "passed": true,
+          "error": ""
+        },
+        {
+          "id": "A01",
+          "role": "접근성",
+          "weight": 5,
+          "title": "AI 화면 전환 후 제목에 초점",
+          "passed": false,
+          "error": ""
+        },
+        {
+          "id": "A02",
+          "role": "접근성",
+          "weight": 5,
+          "title": "AI 적용 후 오늘 계획 제목에 초점",
+          "passed": false,
+          "error": ""
+        },
+        {
+          "id": "A03",
+          "role": "접근성",
+          "weight": 5,
+          "title": "한글 IME 조합 중 검색 입력 DOM을 유지",
+          "passed": false,
+          "error": ""
+        },
+        {
+          "id": "A04",
+          "role": "접근성",
+          "weight": 4,
+          "title": "추세 그래프 대체 설명에 날짜와 수치 포함",
+          "passed": false,
+          "error": ""
+        },
+        {
+          "id": "A05",
+          "role": "접근성",
+          "weight": 4,
+          "title": "체성분 설정 저장 뒤 목록 제목에 초점",
+          "passed": false,
+          "error": ""
+        },
+        {
+          "id": "A06",
+          "role": "접근성",
+          "weight": 3,
+          "title": "모바일 시연 컨트롤 높이 44px 이상",
+          "passed": false,
+          "error": ""
+        },
+        {
+          "id": "Q01",
+          "role": "QA·신뢰성",
+          "weight": 5,
+          "title": "AI에서 저장된 계획 유지 선택 시 편집 초안 폐기",
+          "passed": false,
+          "error": ""
+        },
+        {
+          "id": "Q02",
+          "role": "QA·신뢰성",
+          "weight": 4,
+          "title": "상담 날짜만 변경해도 닫기 전 폐기 확인",
+          "passed": false,
+          "error": ""
+        },
+        {
+          "id": "Q03",
+          "role": "QA·신뢰성",
+          "weight": 4,
+          "title": "손상된 로컬 저장값이 있어도 새 저장 가능",
+          "passed": false,
+          "error": ""
+        },
+        {
+          "id": "Q04",
+          "role": "QA·신뢰성",
+          "weight": 4,
+          "title": "로컬 저장 불가 시 상담은 실행 중 상태로 안내",
+          "passed": false,
+          "error": ""
+        },
+        {
+          "id": "Q05",
+          "role": "QA·신뢰성",
+          "weight": 4,
+          "title": "체성분 저장 오류 시 체크 상태를 유지",
+          "passed": true,
+          "error": ""
+        },
+        {
+          "id": "Q06",
+          "role": "QA·신뢰성",
+          "weight": 5,
+          "title": "오프라인 단일 파일에서 7화면 탐색, 외부 요청 0",
+          "passed": true,
+          "error": ""
+        }
+      ]
+    },
+    "final": {
+      "score": 132,
+      "possible": 132,
+      "passed": 30,
+      "total": 30,
+      "results": [
+        {
+          "id": "P01",
+          "role": "기획·안전",
+          "weight": 5,
+          "title": "비표준 10/22 값이 기본 추세선에 섞이지 않음",
+          "passed": true,
+          "error": ""
+        },
+        {
+          "id": "P02",
+          "role": "기획·안전",
+          "weight": 5,
+          "title": "AI 고정 예시가 컨디션 계산값처럼 보이지 않음",
+          "passed": true,
+          "error": ""
+        },
+        {
+          "id": "P03",
+          "role": "기획·안전",
+          "weight": 4,
+          "title": "AI 제안 적용은 저장 전 초안으로 남음",
+          "passed": true,
+          "error": ""
+        },
+        {
+          "id": "P04",
+          "role": "기획·안전",
+          "weight": 5,
+          "title": "계획 주요 버튼이 저장 행동을 정확히 명명",
+          "passed": true,
+          "error": ""
+        },
+        {
+          "id": "P05",
+          "role": "기획·안전",
+          "weight": 4,
+          "title": "수면 누락 안내 버튼이 입력 기능처럼 보이지 않음",
+          "passed": true,
+          "error": ""
+        },
+        {
+          "id": "P06",
+          "role": "기획·안전",
+          "weight": 4,
+          "title": "가상 코치 상담의 허구 출처를 상세에 표시",
+          "passed": true,
+          "error": ""
+        },
+        {
+          "id": "U01",
+          "role": "UX·비주얼",
+          "weight": 5,
+          "title": "모바일 첫 화면에서 AI와 저장 경로 발견",
+          "passed": true,
+          "error": ""
+        },
+        {
+          "id": "U02",
+          "role": "UX·비주얼",
+          "weight": 5,
+          "title": "계획 저장 결과에 저장 시각과 범위 표시",
+          "passed": true,
+          "error": ""
+        },
+        {
+          "id": "U03",
+          "role": "UX·비주얼",
+          "weight": 4,
+          "title": "AI 선택 세 가지를 동등한 행동으로 제시",
+          "passed": true,
+          "error": ""
+        },
+        {
+          "id": "U04",
+          "role": "UX·비주얼",
+          "weight": 4,
+          "title": "그래프 제목이 비교 조건을 명시",
+          "passed": true,
+          "error": ""
+        },
+        {
+          "id": "U05",
+          "role": "UX·비주얼",
+          "weight": 3,
+          "title": "프로토타입 상태 시연을 접힌 도구로 분리",
+          "passed": true,
+          "error": ""
+        },
+        {
+          "id": "U06",
+          "role": "UX·비주얼",
+          "weight": 4,
+          "title": "상담 빈 상태에서 직접 입력과 가상 예시 모두 선택 가능",
+          "passed": true,
+          "error": ""
+        },
+        {
+          "id": "D01",
+          "role": "데이터·지표",
+          "weight": 5,
+          "title": "전체 목록 8건과 표준 비교 7건을 구분",
+          "passed": true,
+          "error": ""
+        },
+        {
+          "id": "D02",
+          "role": "데이터·지표",
+          "weight": 5,
+          "title": "10/22 제외 저장 후 원본 값은 목록에 남음",
+          "passed": true,
+          "error": ""
+        },
+        {
+          "id": "D03",
+          "role": "데이터·지표",
+          "weight": 5,
+          "title": "고정 AI 제안과 실제 CSV 근거의 의미를 분리",
+          "passed": true,
+          "error": ""
+        },
+        {
+          "id": "D04",
+          "role": "데이터·지표",
+          "weight": 4,
+          "title": "75분도 시연 계획의 가상 값으로 표기",
+          "passed": true,
+          "error": ""
+        },
+        {
+          "id": "D05",
+          "role": "데이터·지표",
+          "weight": 5,
+          "title": "목표 우선순위와 측정 1RM 의미 유지",
+          "passed": true,
+          "error": ""
+        },
+        {
+          "id": "D06",
+          "role": "데이터·지표",
+          "weight": 4,
+          "title": "측정하지 않은 사용성 성공률을 UI에 표시하지 않음",
+          "passed": true,
+          "error": ""
+        },
+        {
+          "id": "A01",
+          "role": "접근성",
+          "weight": 5,
+          "title": "AI 화면 전환 후 제목에 초점",
+          "passed": true,
+          "error": ""
+        },
+        {
+          "id": "A02",
+          "role": "접근성",
+          "weight": 5,
+          "title": "AI 적용 후 오늘 계획 제목에 초점",
+          "passed": true,
+          "error": ""
+        },
+        {
+          "id": "A03",
+          "role": "접근성",
+          "weight": 5,
+          "title": "한글 IME 조합 중 검색 입력 DOM을 유지",
+          "passed": true,
+          "error": ""
+        },
+        {
+          "id": "A04",
+          "role": "접근성",
+          "weight": 4,
+          "title": "추세 그래프 대체 설명에 날짜와 수치 포함",
+          "passed": true,
+          "error": ""
+        },
+        {
+          "id": "A05",
+          "role": "접근성",
+          "weight": 4,
+          "title": "체성분 설정 저장 뒤 목록 제목에 초점",
+          "passed": true,
+          "error": ""
+        },
+        {
+          "id": "A06",
+          "role": "접근성",
+          "weight": 3,
+          "title": "모바일 시연 컨트롤 높이 44px 이상",
+          "passed": true,
+          "error": ""
+        },
+        {
+          "id": "Q01",
+          "role": "QA·신뢰성",
+          "weight": 5,
+          "title": "AI에서 저장된 계획 유지 선택 시 편집 초안 폐기",
+          "passed": true,
+          "error": ""
+        },
+        {
+          "id": "Q02",
+          "role": "QA·신뢰성",
+          "weight": 4,
+          "title": "상담 날짜만 변경해도 닫기 전 폐기 확인",
+          "passed": true,
+          "error": ""
+        },
+        {
+          "id": "Q03",
+          "role": "QA·신뢰성",
+          "weight": 4,
+          "title": "손상된 로컬 저장값이 있어도 새 저장 가능",
+          "passed": true,
+          "error": ""
+        },
+        {
+          "id": "Q04",
+          "role": "QA·신뢰성",
+          "weight": 4,
+          "title": "로컬 저장 불가 시 상담은 실행 중 상태로 안내",
+          "passed": true,
+          "error": ""
+        },
+        {
+          "id": "Q05",
+          "role": "QA·신뢰성",
+          "weight": 4,
+          "title": "체성분 저장 오류 시 체크 상태를 유지",
+          "passed": true,
+          "error": ""
+        },
+        {
+          "id": "Q06",
+          "role": "QA·신뢰성",
+          "weight": 5,
+          "title": "오프라인 단일 파일에서 7화면 탐색, 외부 요청 0",
+          "passed": true,
+          "error": ""
+        }
+      ]
+    }
+  }
+}
