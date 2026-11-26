@@ -1,0 +1,83 @@
+{
+  "result": "passed",
+  "checks": [
+    {
+      "check": "offline initial load",
+      "status": "passed"
+    },
+    {
+      "check": "condition starts empty and supports user selection",
+      "status": "passed"
+    },
+    {
+      "check": "AI draft transfers without automatic save",
+      "status": "passed"
+    },
+    {
+      "check": "save error preserves input; retry commits selected values",
+      "status": "passed"
+    },
+    {
+      "check": "plan and condition persist after reopening",
+      "status": "passed"
+    },
+    {
+      "check": "body inclusion save preserves original and updates chart",
+      "status": "passed"
+    },
+    {
+      "check": "body condition filtering",
+      "status": "passed"
+    },
+    {
+      "check": "consult search and explicit plan linking do not alter plan values",
+      "status": "passed"
+    },
+    {
+      "check": "new consult stores input as text",
+      "status": "passed"
+    },
+    {
+      "check": "invalid repetitions or sets cannot be saved",
+      "status": "passed"
+    },
+    {
+      "check": "responsive 390px, three main flows",
+      "status": "passed"
+    },
+    {
+      "check": "responsive 320px, three main flows",
+      "status": "passed"
+    },
+    {
+      "check": "responsive 768px, three main flows",
+      "status": "passed"
+    },
+    {
+      "check": "responsive 1280px, three main flows",
+      "status": "passed"
+    },
+    {
+      "check": "no JavaScript errors or external network requests",
+      "status": "passed"
+    },
+    {
+      "check": "AI states and remaining details at 320px",
+      "status": "passed"
+    },
+    {
+      "check": "AI states and remaining details at 390px",
+      "status": "passed"
+    },
+    {
+      "check": "AI states and remaining details at 1440px",
+      "status": "passed"
+    },
+    {
+      "check": "dialog Escape preserves input when discard is declined",
+      "status": "passed"
+    }
+  ],
+  "errors": [],
+  "externalRequests": []
+}

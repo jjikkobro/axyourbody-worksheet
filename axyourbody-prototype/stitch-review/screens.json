@@ -1,0 +1,74 @@
+[
+  {
+    "theme": "precise-training",
+    "screen": "S01",
+    "title": "S01 · 운동 계획",
+    "resource": "projects/1302419695509867707/screens/node_12951907484648990654",
+    "local": "precise-training/S01.html",
+    "bytes": 25836
+  },
+  {
+    "theme": "precise-training",
+    "screen": "S02",
+    "title": "S02 · 오늘 운동 계획",
+    "resource": "projects/1302419695509867707/screens/node_13069109301222254144",
+    "local": "precise-training/S02.html",
+    "bytes": 38986
+  },
+  {
+    "theme": "precise-training",
+    "screen": "S03",
+    "title": "S03 · AI가 제안한 운동 계획",
+    "resource": "projects/1302419695509867707/screens/node_14301761506182837923",
+    "local": "precise-training/S03.html",
+    "bytes": 25882
+  },
+  {
+    "theme": "calm-coach",
+    "screen": "S01",
+    "title": "[Calm Coach] S01 · 운동 계획",
+    "resource": "projects/1302419695509867707/screens/node_687118688719407751",
+    "local": "calm-coach/S01.html",
+    "bytes": 24584
+  },
+  {
+    "theme": "calm-coach",
+    "screen": "S02",
+    "title": "[Calm Coach] S02 · 오늘 운동 계획",
+    "resource": "projects/1302419695509867707/screens/node_13004296255996124421",
+    "local": "calm-coach/S02.html",
+    "bytes": 33922
+  },
+  {
+    "theme": "calm-coach",
+    "screen": "S03",
+    "title": "[Calm Coach] S03 · AI가 제안한 운동 계획",
+    "resource": "projects/1302419695509867707/screens/node_3243688053895133936",
+    "local": "calm-coach/S03.html",
+    "bytes": 23883
+  },
+  {
+    "theme": "clear-guidance",
+    "screen": "S01",
+    "title": "[Clear Guidance] S01 · 운동 계획",
+    "resource": "projects/1302419695509867707/screens/node_6102701703841221894",
+    "local": "clear-guidance/S01.html",
+    "bytes": 23465
+  },
+  {
+    "theme": "clear-guidance",
+    "screen": "S02",
+    "title": "[Clear Guidance] S02 · 오늘 운동 계획",
+    "resource": "projects/1302419695509867707/screens/node_16904604114008550786",
+    "local": "clear-guidance/S02.html",
+    "bytes": 32593
+  },
+  {
+    "theme": "clear-guidance",
+    "screen": "S03",
+    "title": "[Clear Guidance] S03 · AI가 제안한 운동 계획",
+    "resource": "projects/1302419695509867707/screens/node_16793039442435276060",
+    "local": "clear-guidance/S03.html",
+    "bytes": 23395
+  }
+]

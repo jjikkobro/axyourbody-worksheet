@@ -1,0 +1,417 @@
+<!DOCTYPE html><html lang="ko"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[Calm Coach] S02 · 오늘 운동 계획 — AX YOUR BODY</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config" data-stitch-original-src="b3e7bc5fc3559c33===../../design-systems/calm-coach/tailwind.config.js">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'primary': '#2a72de',
+        'on-primary': '#ffffff',
+        'primary-hover': '#1e5ec2',
+        'primary-container': '#e5effd',
+        'on-primary-container': '#133a75',
+        'surface': '#ffffff',
+        'on-surface': '#1c1b1a',
+        'on-surface-variant': '#5e5c57',
+        'surface-container-low': '#f7f1e8',
+        'surface-container': '#f0e9dd',
+        'surface-container-high': '#ececec',
+        'surface-container-highest': '#e1dcd3',
+        'ink-muted': '#4a4741',
+        'outline': '#cccac7',
+        'outline-variant': '#e1dcd3',
+        'success': '#224228',
+        'on-success': '#ffffff',
+        'success-container': '#e5efe7',
+        'on-success-container': '#1b3620',
+        'warning': '#8a5a0a',
+        'on-warning': '#ffffff',
+        'warning-container': '#faefd9',
+        'on-warning-container': '#5c3b04',
+        'error': '#c92d18',
+        'on-error': '#ffffff',
+        'error-container': '#fde8e5',
+        'on-error-container': '#8c1b0c',
+      },
+      borderRadius: {
+        'sm': '8px',
+        'DEFAULT': '12px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '24px',
+        'full': '9999px',
+      },
+      spacing: {
+        'gutter-xs': '4px',
+        'gutter-sm': '8px',
+        'gutter-md': '12px',
+        'gutter-lg': '16px',
+        'gutter-xl': '24px',
+        'gutter-2xl': '32px',
+        'section': '40px',
+        'page-margin': '32px',
+      },
+      fontFamily: {
+        'display': ['"Noto Serif KR"', 'sans-serif'],
+        'headline': ['"Noto Serif KR"', 'sans-serif'],
+        'title': ['"Noto Sans KR"', 'sans-serif'],
+        'body': ['"Noto Sans KR"', 'sans-serif'],
+        'label': ['"Noto Sans KR"', 'sans-serif'],
+        'mono': ['"Source Code Pro"', 'monospace'],
+      },
+      fontSize: {
+        'display-lg': ['36px', { lineHeight: '44px', letterSpacing: '-0.5px', fontWeight: '500' }],
+        'display-lg-mobile': ['28px', { lineHeight: '36px', letterSpacing: '-0.3px', fontWeight: '500' }],
+        'headline-lg': ['26px', { lineHeight: '34px', letterSpacing: '-0.3px', fontWeight: '600' }],
+        'headline-md': ['20px', { lineHeight: '28px', letterSpacing: '-0.2px', fontWeight: '600' }],
+        'title-lg': ['18px', { lineHeight: '26px', letterSpacing: '-0.1px', fontWeight: '600' }],
+        'title-md': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '600' }],
+        'body-lg': ['15px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-md': ['14px', { lineHeight: '22px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-sm': ['13px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '500' }],
+        'label-md': ['13px', { lineHeight: '18px', letterSpacing: '0px', fontWeight: '500' }],
+        'label-sm': ['12px', { lineHeight: '16px', letterSpacing: '0.1px', fontWeight: '500' }],
+        'mono-md': ['13px', { lineHeight: '18px', letterSpacing: '0px', fontWeight: '500' }],
+      },
+      transitionDuration: {
+        'state-change': '150ms',
+      },
+      transitionDelay: {
+        'state-change': '0ms',
+      },
+      transitionTimingFunction: {
+        'state-change': 'ease-out',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&amp;family=Noto+Serif+KR:wght@500;600&amp;family=Source+Code+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>.material-symbols-outlined, .material-symbols-rounded, .material-symbols-sharp, .material-icons { display: inline-block; width: 1em; height: 1em; line-height: 1 !important; box-sizing: content-box; overflow: hidden; white-space: nowrap; direction: ltr; vertical-align: middle; }</style>
+</head>
+<body class="bg-surface-container-low text-on-surface font-body antialiased">
+  <div class="min-h-screen flex flex-col lg:flex-row">
+    <!-- Persistent Left Navigation Rail -->
+    <aside class="w-full lg:w-64 lg:min-h-screen shrink-0 bg-surface border-b lg:border-b-0 lg:border-r border-outline-variant flex flex-col justify-between p-gutter-lg gap-gutter-xl">
+      <div class="flex flex-col gap-gutter-xl">
+        <div class="flex flex-col gap-gutter-xs px-gutter-sm pt-gutter-xs">
+          <div class="flex items-center gap-gutter-sm">
+            <span class="w-2.5 h-2.5 rounded-full bg-primary shrink-0" aria-hidden="true"></span>
+            <span data-design-text-token="title-md" class="font-title text-title-md text-on-surface tracking-tight">AX YOUR BODY</span>
+          </div>
+          <span data-design-text-token="mono-md" class="font-mono text-mono-md text-on-surface-variant pl-gutter-lg">m-athlete</span>
+        </div>
+
+        <nav aria-label="주 메뉴" class="flex flex-row lg:flex-col gap-gutter-xs overflow-x-auto">
+          <a href="../calm-coach-s01/WorkoutPlans.html" aria-current="page" class="flex items-center justify-between gap-gutter-sm px-gutter-md py-gutter-sm rounded-full bg-primary-container border border-primary text-on-primary-container font-label text-label-lg whitespace-nowrap">
+            <span class="flex items-center gap-gutter-sm">
+              <span class="material-symbols-outlined text-primary text-title-lg" style="font-variation-settings: &#39;FILL&#39; 1;" aria-hidden="true">event_note</span>
+              <span data-design-text-token="label-lg">운동 계획</span>
+            </span>
+            <span class="w-1.5 h-1.5 rounded-full bg-primary" aria-hidden="true"></span>
+          </a>
+
+          <span aria-disabled="true" class="flex items-center justify-between gap-gutter-sm px-gutter-md py-gutter-sm rounded-full text-on-surface-variant cursor-not-allowed whitespace-nowrap">
+            <span class="flex items-center gap-gutter-sm">
+              <span class="material-symbols-outlined text-title-lg" aria-hidden="true">fitness_center</span>
+              <span data-design-text-token="label-lg" class="font-label text-label-lg">운동 일지</span>
+            </span>
+            <span data-design-text-token="label-sm" class="font-label text-label-sm px-gutter-xs py-0.5 rounded-full bg-surface-container border border-outline-variant text-on-surface-variant">준비 중</span>
+          </span>
+
+          <a href="#body-comp" title="과업 2에서 구현 예정" class="flex items-center justify-between gap-gutter-sm px-gutter-md py-gutter-sm rounded-full text-ink-muted hover:text-on-surface hover:bg-surface-container transition-colors duration-state-change whitespace-nowrap">
+            <span class="flex items-center gap-gutter-sm">
+              <span class="material-symbols-outlined text-title-lg" aria-hidden="true">monitoring</span>
+              <span data-design-text-token="label-lg" class="font-label text-label-lg">체성분 기록</span>
+            </span>
+            <span data-design-text-token="label-sm" class="font-label text-label-sm text-on-surface-variant">과업 2</span>
+          </a>
+
+          <a href="#consults" title="과업 3에서 구현 예정" class="flex items-center justify-between gap-gutter-sm px-gutter-md py-gutter-sm rounded-full text-ink-muted hover:text-on-surface hover:bg-surface-container transition-colors duration-state-change whitespace-nowrap">
+            <span class="flex items-center gap-gutter-sm">
+              <span class="material-symbols-outlined text-title-lg" aria-hidden="true">forum</span>
+              <span data-design-text-token="label-lg" class="font-label text-label-lg">지난 상담</span>
+            </span>
+            <span data-design-text-token="label-sm" class="font-label text-label-sm text-on-surface-variant">과업 3</span>
+          </a>
+
+          <span aria-disabled="true" class="flex items-center justify-between gap-gutter-sm px-gutter-md py-gutter-sm rounded-full text-on-surface-variant cursor-not-allowed whitespace-nowrap">
+            <span class="flex items-center gap-gutter-sm">
+              <span class="material-symbols-outlined text-title-lg" aria-hidden="true">flag</span>
+              <span data-design-text-token="label-lg" class="font-label text-label-lg">운동 목표</span>
+            </span>
+            <span data-design-text-token="label-sm" class="font-label text-label-sm px-gutter-xs py-0.5 rounded-full bg-surface-container border border-outline-variant text-on-surface-variant">준비 중</span>
+          </span>
+        </nav>
+      </div>
+
+      <div class="hidden lg:flex flex-col gap-gutter-sm p-gutter-lg rounded-lg bg-surface-container-low border border-outline-variant">
+        <div class="flex items-center gap-gutter-xs">
+          <span class="material-symbols-outlined text-primary text-title-md" aria-hidden="true">spa</span>
+          <span data-design-text-token="label-md" class="font-label text-label-md text-on-surface">Calm Coach</span>
+        </div>
+        <p data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant text-pretty">
+          실제 기록(CSV)과 가상 시연용 계획 샘플을 구분해 표시합니다.
+        </p>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 min-w-0 p-gutter-xl lg:p-page-margin">
+      <div class="max-w-6xl mx-auto flex flex-col gap-gutter-xl">
+        <header class="flex flex-wrap items-center justify-between gap-gutter-md pb-gutter-lg border-b border-outline-variant">
+          <div class="flex items-center gap-gutter-md">
+            <a href="../calm-coach-s01/WorkoutPlans.html" aria-label="운동 계획 목록으로 돌아가기" class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-surface border border-outline hover:border-primary text-ink-muted hover:text-on-surface transition-colors duration-state-change">
+              <span class="material-symbols-outlined text-title-lg" aria-hidden="true">arrow_back</span>
+            </a>
+            <div class="flex flex-col gap-gutter-xs">
+              <div class="flex flex-wrap items-center gap-gutter-sm">
+                <h1 data-design-text-token="headline-lg" class="font-headline text-headline-lg text-on-surface">오늘 운동 계획</h1>
+                <span data-design-text-token="mono-md" class="font-mono text-mono-md tabular-nums text-on-surface-variant">2026-10-11 (일)</span>
+                <span role="status" class="inline-flex items-center px-gutter-md py-gutter-xs rounded-full bg-surface border border-outline text-ink-muted">
+                  <span data-design-text-token="label-sm" class="font-label text-label-sm">운동 예정</span>
+                </span>
+              </div>
+              <p data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant">
+                예정 무게·세트와 전날 기록·수면을 확인하고, 유지 또는 변경을 선택해 저장하세요.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-gutter-xs bg-surface border border-outline-variant rounded-full p-gutter-xs" role="group" aria-label="상태 시연 전환">
+            <button type="button" data-demo-state="normal" class="demo-state-btn px-gutter-md py-gutter-xs rounded-full bg-primary-container text-on-primary-container font-label text-label-sm">기본 상태</button>
+            <button type="button" data-demo-state="empty-sleep" class="demo-state-btn px-gutter-md py-gutter-xs rounded-full text-on-surface-variant hover:text-on-surface font-label text-label-sm">수면 누락(빈 상태)</button>
+            <button type="button" data-demo-state="save-error" class="demo-state-btn px-gutter-md py-gutter-xs rounded-full text-on-surface-variant hover:text-on-surface font-label text-label-sm">저장 오류 시연</button>
+          </div>
+        </header>
+
+        <div id="save-success-banner" role="status" class="hidden flex-wrap items-center justify-between gap-gutter-md p-gutter-lg rounded-xl bg-success-container border border-success">
+          <div class="flex items-start gap-gutter-md">
+            <span class="material-symbols-outlined text-on-success-container mt-0.5" aria-hidden="true">check_circle</span>
+            <div class="flex flex-col gap-gutter-xs">
+              <span data-design-text-token="label-lg" class="font-label text-label-lg text-on-success-container" id="save-success-title">내가 선택한 운동 계획을 저장했어요.</span>
+              <span data-design-text-token="body-sm" class="font-body text-body-sm text-on-success-container" id="save-success-detail">저장 완료</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="save-error-banner" role="alert" class="hidden flex-wrap items-center justify-between gap-gutter-md p-gutter-lg rounded-xl bg-error-container border border-error">
+          <div class="flex items-start gap-gutter-md">
+            <span class="material-symbols-outlined text-on-error-container mt-0.5" aria-hidden="true">error</span>
+            <div class="flex flex-col gap-gutter-xs">
+              <span data-design-text-token="label-lg" class="font-label text-label-lg text-on-error-container">계획을 저장하지 못했어요. 연결을 확인해 주세요.</span>
+              <span data-design-text-token="body-sm" class="font-body text-body-sm text-on-error-container">입력하신 무게·세트와 선택 내용은 그대로 유지되어 있어요.</span>
+            </div>
+          </div>
+          <button id="retry-save-btn" type="button" class="px-gutter-lg py-gutter-xs rounded-full bg-surface text-on-surface border border-outline font-label text-label-md">다시 저장하기</button>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-xl items-start">
+          <section class="lg:col-span-7 flex flex-col gap-gutter-lg">
+            <div class="bg-surface border border-outline-variant rounded-xl p-gutter-2xl flex flex-col gap-gutter-lg">
+              <div class="flex flex-wrap items-center justify-between gap-gutter-sm">
+                <div class="flex flex-col gap-gutter-xs">
+                  <div class="flex items-center gap-gutter-sm">
+                    <h2 data-design-text-token="headline-md" class="font-headline text-headline-md text-on-surface">하체 웨이트 예정 종목</h2>
+                    <span role="status" class="inline-flex items-center px-gutter-md py-gutter-xs rounded-full bg-primary-container border border-primary text-on-primary-container">
+                      <span data-design-text-token="label-sm" class="font-label text-label-sm" id="plan-source-label">가상 시연용 샘플</span>
+                    </span>
+                  </div>
+                  <p data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant">예정 시각 19:00 · 운동할 수 있는 시간 75분</p>
+                </div>
+
+                <button id="toggle-edit-btn" type="button" class="inline-flex items-center gap-gutter-xs px-gutter-lg py-gutter-xs rounded-full bg-surface-container-low border border-outline text-on-surface hover:bg-surface-container font-label text-label-md transition-colors duration-state-change">
+                  <span class="material-symbols-outlined text-title-md" aria-hidden="true">edit</span>
+                  <span data-design-text-token="label-md" id="toggle-edit-label">운동 계획 바꾸기</span>
+                </button>
+              </div>
+
+              <div class="w-full overflow-x-auto bg-surface-container-low border border-outline-variant rounded-lg">
+                <table class="w-full text-left border-collapse">
+                  <thead>
+                    <tr class="border-b border-outline-variant">
+                      <th scope="col" class="px-gutter-md py-gutter-md text-on-surface-variant whitespace-nowrap"><span data-design-text-token="label-md" class="font-label text-label-md">동작명</span></th>
+                      <th scope="col" class="px-gutter-md py-gutter-md text-on-surface-variant text-right whitespace-nowrap"><span data-design-text-token="label-md" class="font-label text-label-md">무게(kg)</span></th>
+                      <th scope="col" class="px-gutter-md py-gutter-md text-on-surface-variant text-right whitespace-nowrap"><span data-design-text-token="label-md" class="font-label text-label-md">횟수</span></th>
+                      <th scope="col" class="px-gutter-md py-gutter-md text-on-surface-variant text-right whitespace-nowrap"><span data-design-text-token="label-md" class="font-label text-label-md">세트</span></th>
+                      <th scope="col" class="px-gutter-md py-gutter-md text-on-surface-variant text-right whitespace-nowrap"><span data-design-text-token="label-md" class="font-label text-label-md">이전 RPE</span></th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-outline-variant">
+                    <tr>
+                      <td class="px-gutter-md py-gutter-md"><span class="font-body text-body-md text-on-surface">백스쿼트</span></td>
+                      <td class="px-gutter-md py-gutter-md text-right"><span class="display-val font-mono text-mono-md tabular-nums text-on-surface" data-field="weight" data-idx="0">102.5</span><input type="number" step="2.5" value="102.5" data-input="weight" data-idx="0" class="edit-input hidden w-20 text-right bg-surface border border-primary rounded px-gutter-xs py-0.5 font-mono text-mono-md text-on-surface"></td>
+                      <td class="px-gutter-md py-gutter-md text-right"><span class="display-val font-mono text-mono-md tabular-nums text-ink-muted" data-field="reps" data-idx="0">5</span><input type="number" value="5" data-input="reps" data-idx="0" class="edit-input hidden w-14 text-right bg-surface border border-primary rounded px-gutter-xs py-0.5 font-mono text-mono-md text-on-surface"></td>
+                      <td class="px-gutter-md py-gutter-md text-right"><span class="display-val font-mono text-mono-md tabular-nums text-ink-muted" data-field="sets" data-idx="0">5</span><input type="number" value="5" data-input="sets" data-idx="0" class="edit-input hidden w-14 text-right bg-surface border border-primary rounded px-gutter-xs py-0.5 font-mono text-mono-md text-on-surface"></td>
+                      <td class="px-gutter-md py-gutter-md text-right"><span class="font-mono text-mono-md tabular-nums text-on-surface-variant">9</span></td>
+                    </tr>
+                    <tr>
+                      <td class="px-gutter-md py-gutter-md"><span class="font-body text-body-md text-on-surface">루마니안 데드리프트</span></td>
+                      <td class="px-gutter-md py-gutter-md text-right"><span class="display-val font-mono text-mono-md tabular-nums text-on-surface" data-field="weight" data-idx="1">92.0</span><input type="number" step="2.5" value="92.0" data-input="weight" data-idx="1" class="edit-input hidden w-20 text-right bg-surface border border-primary rounded px-gutter-xs py-0.5 font-mono text-mono-md text-on-surface"></td>
+                      <td class="px-gutter-md py-gutter-md text-right"><span class="display-val font-mono text-mono-md tabular-nums text-ink-muted" data-field="reps" data-idx="1">8</span><input type="number" value="8" data-input="reps" data-idx="1" class="edit-input hidden w-14 text-right bg-surface border border-primary rounded px-gutter-xs py-0.5 font-mono text-mono-md text-on-surface"></td>
+                      <td class="px-gutter-md py-gutter-md text-right"><span class="display-val font-mono text-mono-md tabular-nums text-ink-muted" data-field="sets" data-idx="1">3</span><input type="number" value="3" data-input="sets" data-idx="1" class="edit-input hidden w-14 text-right bg-surface border border-primary rounded px-gutter-xs py-0.5 font-mono text-mono-md text-on-surface"></td>
+                      <td class="px-gutter-md py-gutter-md text-right"><span class="font-mono text-mono-md tabular-nums text-on-surface-variant">8</span></td>
+                    </tr>
+                    <tr>
+                      <td class="px-gutter-md py-gutter-md"><span class="font-body text-body-md text-on-surface">레그프레스</span></td>
+                      <td class="px-gutter-md py-gutter-md text-right"><span class="display-val font-mono text-mono-md tabular-nums text-on-surface" data-field="weight" data-idx="2">184.5</span><input type="number" step="2.5" value="184.5" data-input="weight" data-idx="2" class="edit-input hidden w-20 text-right bg-surface border border-primary rounded px-gutter-xs py-0.5 font-mono text-mono-md text-on-surface"></td>
+                      <td class="px-gutter-md py-gutter-md text-right"><span class="display-val font-mono text-mono-md tabular-nums text-ink-muted" data-field="reps" data-idx="2">10</span><input type="number" value="10" data-input="reps" data-idx="2" class="edit-input hidden w-14 text-right bg-surface border border-primary rounded px-gutter-xs py-0.5 font-mono text-mono-md text-on-surface"></td>
+                      <td class="px-gutter-md py-gutter-md text-right"><span class="display-val font-mono text-mono-md tabular-nums text-ink-muted" data-field="sets" data-idx="2">3</span><input type="number" value="3" data-input="sets" data-idx="2" class="edit-input hidden w-14 text-right bg-surface border border-primary rounded px-gutter-xs py-0.5 font-mono text-mono-md text-on-surface"></td>
+                      <td class="px-gutter-md py-gutter-md text-right"><span class="font-mono text-mono-md tabular-nums text-on-surface-variant">8.5</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="flex flex-wrap items-center justify-between gap-gutter-md pt-gutter-md border-t border-outline-variant">
+                <a href="../calm-coach-s03/AiPlan.html" class="inline-flex items-center gap-gutter-sm px-gutter-xl py-gutter-sm rounded-full bg-primary-container text-on-primary-container border border-primary hover:bg-primary hover:text-on-primary transition-colors duration-state-change">
+                  <span class="material-symbols-outlined text-title-md" aria-hidden="true">auto_awesome</span>
+                  <span data-design-text-token="label-lg" class="font-label text-label-lg">AI가 제안한 운동 계획 보기</span>
+                </a>
+
+                <button id="confirm-plan-btn" type="button" class="inline-flex items-center gap-gutter-sm px-gutter-xl py-gutter-sm rounded-full bg-primary text-on-primary hover:bg-primary-hover transition-colors duration-state-change">
+                  <span class="material-symbols-outlined text-title-md" aria-hidden="true">check</span>
+                  <span data-design-text-token="label-lg" class="font-label text-label-lg">이 계획으로 운동하기</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="bg-surface border border-outline-variant rounded-xl p-gutter-xl flex flex-col gap-gutter-md">
+              <div class="flex items-center justify-between">
+                <h2 data-design-text-token="title-md" class="font-title text-title-md text-on-surface">오늘 몸 상태 (사용자 입력)</h2>
+                <span data-design-text-token="label-sm" class="font-label text-label-sm text-on-surface-variant">선택 입력</span>
+              </div>
+              <div class="flex flex-wrap items-center gap-gutter-sm">
+                <span data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant mr-gutter-sm">주관적 컨디션</span>
+                <button type="button" class="cond-btn w-9 h-9 rounded-full border border-outline bg-surface-container-low text-ink-muted font-mono text-mono-md">1</button>
+                <button type="button" class="cond-btn w-9 h-9 rounded-full border border-outline bg-surface-container-low text-ink-muted font-mono text-mono-md">2</button>
+                <button type="button" class="cond-btn w-9 h-9 rounded-full border border-outline bg-surface-container-low text-ink-muted font-mono text-mono-md">3</button>
+                <button type="button" class="cond-btn w-9 h-9 rounded-full border border-primary bg-primary-container text-on-primary-container font-mono text-mono-md">4</button>
+                <button type="button" class="cond-btn w-9 h-9 rounded-full border border-outline bg-surface-container-low text-ink-muted font-mono text-mono-md">5</button>
+              </div>
+              <input type="text" placeholder="피로 부위나 메모를 남기세요 (예: 종아리 뻐근함)" class="bg-surface-container-low border border-outline rounded-lg px-gutter-md py-gutter-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:border-primary focus:ring-0">
+            </div>
+          </section>
+
+          <aside aria-label="참고 기록" class="lg:col-span-5 flex flex-col gap-gutter-md">
+            <article class="bg-surface border border-outline-variant rounded-xl p-gutter-lg flex flex-col gap-gutter-xs">
+              <header class="flex items-center justify-between">
+                <h3 data-design-text-token="label-lg" class="font-label text-label-lg text-on-surface">운동 목표 우선순위</h3>
+                <span data-design-text-token="label-sm" class="font-label text-label-sm text-on-surface-variant">시연용 샘플</span>
+              </header>
+              <p data-design-text-token="body-md" class="font-body text-body-md text-ink-muted">1순위: 하체 근력 유지 · 2순위: 하이록스 레이스 완주</p>
+            </article>
+
+            <article class="bg-surface border border-outline-variant rounded-xl p-gutter-lg flex flex-col gap-gutter-xs">
+              <header class="flex items-center justify-between">
+                <h3 data-design-text-token="label-lg" class="font-label text-label-lg text-on-surface">전날 운동 · 2026-10-10</h3>
+                <span data-design-text-token="label-sm" class="font-label text-label-sm text-on-surface-variant">실제 기록 (CSV)</span>
+              </header>
+              <p data-design-text-token="body-md" class="font-body text-body-md text-on-surface">하이록스 시뮬레이션</p>
+              <p data-design-text-token="mono-md" class="font-mono text-mono-md tabular-nums text-on-surface-variant">실제 운동 시간 70분 · RPE 8</p>
+            </article>
+
+            <article id="sleep-normal-card" class="bg-surface border border-outline-variant rounded-xl p-gutter-lg flex flex-col gap-gutter-xs">
+              <header class="flex items-center justify-between">
+                <h3 data-design-text-token="label-lg" class="font-label text-label-lg text-on-surface">수면 기록 · 2026-10-11</h3>
+                <span data-design-text-token="label-sm" class="font-label text-label-sm text-on-surface-variant">실제 기록 (CSV)</span>
+              </header>
+              <p data-design-text-token="mono-md" class="font-mono text-mono-md tabular-nums text-on-surface">6.1시간 · 컨디션 4/5</p>
+              <p data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant">참고: 2026-10-10 수면 기록은 비어 있어요 (10/09 6.8시간).</p>
+            </article>
+
+            <div id="sleep-empty-alert" role="alert" class="hidden flex-col gap-gutter-md p-gutter-lg rounded-xl bg-warning-container border border-warning">
+              <div class="flex items-start gap-gutter-sm">
+                <span class="material-symbols-outlined text-on-warning-container mt-0.5" aria-hidden="true">bedtime_off</span>
+                <div class="flex flex-col gap-gutter-xs">
+                  <span data-design-text-token="label-lg" class="font-label text-label-lg text-on-warning-container">그날(2026-10-10) 수면 기록이 없어요.</span>
+                  <span data-design-text-token="body-sm" class="font-body text-body-sm text-on-warning-container text-pretty">
+                    10/09 6.8시간 → 10/11 6.1시간이며, 누락은 수면 0시간을 뜻하지 않아요. 없는 수면값은 AI 판단 근거에서 제외되며 입력 없이도 직접 결정할 수 있어요.
+                  </span>
+                </div>
+              </div>
+              <button type="button" class="self-start px-gutter-lg py-gutter-xs rounded-full bg-surface border border-outline text-on-surface font-label text-label-md">수면 기록 입력하기</button>
+            </div>
+
+            <article class="bg-surface border border-outline-variant rounded-xl p-gutter-lg flex flex-col gap-gutter-xs">
+              <header class="flex items-center justify-between">
+                <h3 data-design-text-token="label-lg" class="font-label text-label-lg text-on-surface">연결한 상담</h3>
+                <span data-design-text-token="label-sm" class="font-label text-label-sm text-on-surface-variant">과업 3 연동</span>
+              </header>
+              <p data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant">아직 이 계획에 연결된 지난 상담이 없어요.</p>
+            </article>
+          </aside>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    (function () {
+      const exercises = [
+        { name: '백스쿼트', weight: 102.5, reps: 5, sets: 5 },
+        { name: '루마니안 데드리프트', weight: 92.0, reps: 8, sets: 3 },
+        { name: '레그프레스', weight: 184.5, reps: 10, sets: 3 }
+      ];
+      let isEditing = false; let demoMode = 'normal';
+      const toggleEditBtn = document.getElementById('toggle-edit-btn');
+      const toggleEditLabel = document.getElementById('toggle-edit-label');
+      const confirmBtn = document.getElementById('confirm-plan-btn');
+      const retrySaveBtn = document.getElementById('retry-save-btn');
+      const successBanner = document.getElementById('save-success-banner');
+      const successDetail = document.getElementById('save-success-detail');
+      const errorBanner = document.getElementById('save-error-banner');
+      const sleepNormal = document.getElementById('sleep-normal-card');
+      const sleepEmpty = document.getElementById('sleep-empty-alert');
+      const sourceLabel = document.getElementById('plan-source-label');
+
+      function syncDisplayFromModel() {
+        document.querySelectorAll('.display-val').forEach((el) => { el.textContent = exercises[Number(el.dataset.idx)][el.dataset.field]; });
+        document.querySelectorAll('.edit-input').forEach((inp) => { inp.value = exercises[Number(inp.dataset.idx)][inp.dataset.input]; });
+      }
+      function setEditing(editing) {
+        isEditing = editing;
+        document.querySelectorAll('.display-val').forEach((el) => el.classList.toggle('hidden', editing));
+        document.querySelectorAll('.edit-input').forEach((inp) => inp.classList.toggle('hidden', !editing));
+        toggleEditLabel.textContent = editing ? '편집 완료' : '운동 계획 바꾸기';
+        if (!editing) {
+          document.querySelectorAll('.edit-input').forEach((inp) => { exercises[Number(inp.dataset.idx)][inp.dataset.input] = Number(inp.value) || exercises[Number(inp.dataset.idx)][inp.dataset.input]; });
+          syncDisplayFromModel();
+          sourceLabel.textContent = '내가 수정한 계획';
+        }
+      }
+      toggleEditBtn.addEventListener('click', () => setEditing(!isEditing));
+      function savePlan() {
+        if (isEditing) setEditing(false);
+        if (demoMode === 'save-error') { successBanner.classList.add('hidden'); errorBanner.classList.remove('hidden'); errorBanner.classList.add('flex'); return; }
+        errorBanner.classList.add('hidden');
+        successDetail.textContent = exercises.map((ex) => `${ex.name} ${ex.weight}kg (${ex.reps}×${ex.sets})`).join(' · ') + ' — 저장은 계획 확정을 뜻하며 실제 운동 시작·완료가 아닙니다.';
+        successBanner.classList.remove('hidden'); successBanner.classList.add('flex');
+      }
+      confirmBtn.addEventListener('click', savePlan);
+      retrySaveBtn.addEventListener('click', () => { demoMode = 'normal'; updateDemoButtons(); savePlan(); });
+      function updateDemoButtons() {
+        document.querySelectorAll('.demo-state-btn').forEach((btn) => {
+          const active = btn.dataset.demoState === demoMode;
+          btn.classList.toggle('bg-primary-container', active); btn.classList.toggle('text-on-primary-container', active);
+          btn.classList.toggle('text-on-surface-variant', !active);
+        });
+        sleepNormal.classList.toggle('hidden', demoMode === 'empty-sleep');
+        sleepEmpty.classList.toggle('hidden', demoMode !== 'empty-sleep');
+        sleepEmpty.classList.toggle('flex', demoMode === 'empty-sleep');
+        if (demoMode !== 'save-error') errorBanner.classList.add('hidden');
+      }
+      document.querySelectorAll('.demo-state-btn').forEach((btn) => { btn.addEventListener('click', () => { demoMode = btn.dataset.demoState; updateDemoButtons(); }); });
+    })();
+  </script>
+
+
+</body></html>

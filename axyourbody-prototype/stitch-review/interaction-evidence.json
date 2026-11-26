@@ -1,0 +1,155 @@
+[
+  {
+    "theme": "calm-coach",
+    "transfer": {
+      "source": "가상 시연용 샘플",
+      "firstWeight": "102.5",
+      "firstSets": "5"
+    },
+    "save": "check_circle\n내가 선택한 운동 계획을 저장했어요.\n백스쿼트 90kg (5×5) · 루마니안 데드리프트 92kg (8×3) · 레그프레스 184.5kg (10×3) — 저장은 계획 확정을 뜻하며 실제 운동 시작·완료가 아닙니다.",
+    "errorVisible": true,
+    "valueOnError": "90",
+    "retryVisible": true,
+    "conditionChanges": false,
+    "mobile": {
+      "width": 390,
+      "scrollWidth": 390,
+      "clipped": [
+        {
+          "tag": "HEADER",
+          "w": 342,
+          "scroll": 342
+        },
+        {
+          "tag": "TABLE",
+          "w": 306,
+          "scroll": 306
+        },
+        {
+          "tag": "HEADER",
+          "w": 308,
+          "scroll": 308
+        },
+        {
+          "tag": "HEADER",
+          "w": 308,
+          "scroll": 308
+        },
+        {
+          "tag": "HEADER",
+          "w": 308,
+          "scroll": 308
+        },
+        {
+          "tag": "HEADER",
+          "w": 308,
+          "scroll": 308
+        }
+      ],
+      "title": "오늘 운동 계획"
+    },
+    "errors": []
+  },
+  {
+    "theme": "clear-guidance",
+    "transfer": {
+      "source": "가상 시연용 샘플",
+      "firstWeight": "102.5",
+      "firstSets": "5"
+    },
+    "save": "check_circle\n내가 선택한 운동 계획을 저장했어요.\n백스쿼트 90kg (5×5) · 루마니안 데드리프트 92kg (8×3) · 레그프레스 184.5kg (10×3) — 저장은 계획 확정을 뜻하며 실제 운동 시작·완료가 아닙니다.",
+    "errorVisible": true,
+    "valueOnError": "90",
+    "retryVisible": true,
+    "conditionChanges": false,
+    "mobile": {
+      "width": 390,
+      "scrollWidth": 390,
+      "clipped": [
+        {
+          "tag": "HEADER",
+          "w": 342,
+          "scroll": 342
+        },
+        {
+          "tag": "TABLE",
+          "w": 308,
+          "scroll": 308
+        },
+        {
+          "tag": "HEADER",
+          "w": 308,
+          "scroll": 308
+        },
+        {
+          "tag": "HEADER",
+          "w": 308,
+          "scroll": 308
+        },
+        {
+          "tag": "HEADER",
+          "w": 308,
+          "scroll": 308
+        },
+        {
+          "tag": "HEADER",
+          "w": 308,
+          "scroll": 308
+        }
+      ],
+      "title": "오늘 운동 계획"
+    },
+    "errors": []
+  },
+  {
+    "theme": "precise-training",
+    "transfer": {
+      "source": "AI 제안 수정 적용",
+      "firstWeight": "92.5",
+      "firstSets": "4"
+    },
+    "save": "check_circle\n내가 선택한 운동 계획을 저장했어요.\n백스쿼트 90kg (5×4) · 루마니안 데드리프트 82.5kg (8×3) · 레그프레스 184.5kg (10×3) — 저장은 계획 확정을 뜻하며 실제 운동 시작·완료가 아닙니다.",
+    "errorVisible": true,
+    "valueOnError": "90",
+    "retryVisible": true,
+    "conditionChanges": true,
+    "mobile": {
+      "width": 390,
+      "scrollWidth": 390,
+      "clipped": [
+        {
+          "tag": "HEADER",
+          "w": 342,
+          "scroll": 342
+        },
+        {
+          "tag": "TABLE",
+          "w": 306,
+          "scroll": 306
+        },
+        {
+          "tag": "HEADER",
+          "w": 308,
+          "scroll": 308
+        },
+        {
+          "tag": "HEADER",
+          "w": 308,
+          "scroll": 308
+        },
+        {
+          "tag": "HEADER",
+          "w": 308,
+          "scroll": 308
+        },
+        {
+          "tag": "HEADER",
+          "w": 308,
+          "scroll": 308
+        }
+      ],
+      "title": "오늘 운동 계획"
+    },
+    "errors": []
+  }
+]

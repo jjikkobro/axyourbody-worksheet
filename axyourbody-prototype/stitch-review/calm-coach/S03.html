@@ -1,0 +1,335 @@
+<!DOCTYPE html><html lang="ko"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[Calm Coach] S03 · AI가 제안한 운동 계획 — AX YOUR BODY</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config" data-stitch-original-src="b3e7bc5fc3559c33===../../design-systems/calm-coach/tailwind.config.js">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'primary': '#2a72de',
+        'on-primary': '#ffffff',
+        'primary-hover': '#1e5ec2',
+        'primary-container': '#e5effd',
+        'on-primary-container': '#133a75',
+        'surface': '#ffffff',
+        'on-surface': '#1c1b1a',
+        'on-surface-variant': '#5e5c57',
+        'surface-container-low': '#f7f1e8',
+        'surface-container': '#f0e9dd',
+        'surface-container-high': '#ececec',
+        'surface-container-highest': '#e1dcd3',
+        'ink-muted': '#4a4741',
+        'outline': '#cccac7',
+        'outline-variant': '#e1dcd3',
+        'success': '#224228',
+        'on-success': '#ffffff',
+        'success-container': '#e5efe7',
+        'on-success-container': '#1b3620',
+        'warning': '#8a5a0a',
+        'on-warning': '#ffffff',
+        'warning-container': '#faefd9',
+        'on-warning-container': '#5c3b04',
+        'error': '#c92d18',
+        'on-error': '#ffffff',
+        'error-container': '#fde8e5',
+        'on-error-container': '#8c1b0c',
+      },
+      borderRadius: {
+        'sm': '8px',
+        'DEFAULT': '12px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '24px',
+        'full': '9999px',
+      },
+      spacing: {
+        'gutter-xs': '4px',
+        'gutter-sm': '8px',
+        'gutter-md': '12px',
+        'gutter-lg': '16px',
+        'gutter-xl': '24px',
+        'gutter-2xl': '32px',
+        'section': '40px',
+        'page-margin': '32px',
+      },
+      fontFamily: {
+        'display': ['"Noto Serif KR"', 'sans-serif'],
+        'headline': ['"Noto Serif KR"', 'sans-serif'],
+        'title': ['"Noto Sans KR"', 'sans-serif'],
+        'body': ['"Noto Sans KR"', 'sans-serif'],
+        'label': ['"Noto Sans KR"', 'sans-serif'],
+        'mono': ['"Source Code Pro"', 'monospace'],
+      },
+      fontSize: {
+        'display-lg': ['36px', { lineHeight: '44px', letterSpacing: '-0.5px', fontWeight: '500' }],
+        'display-lg-mobile': ['28px', { lineHeight: '36px', letterSpacing: '-0.3px', fontWeight: '500' }],
+        'headline-lg': ['26px', { lineHeight: '34px', letterSpacing: '-0.3px', fontWeight: '600' }],
+        'headline-md': ['20px', { lineHeight: '28px', letterSpacing: '-0.2px', fontWeight: '600' }],
+        'title-lg': ['18px', { lineHeight: '26px', letterSpacing: '-0.1px', fontWeight: '600' }],
+        'title-md': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '600' }],
+        'body-lg': ['15px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-md': ['14px', { lineHeight: '22px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-sm': ['13px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '500' }],
+        'label-md': ['13px', { lineHeight: '18px', letterSpacing: '0px', fontWeight: '500' }],
+        'label-sm': ['12px', { lineHeight: '16px', letterSpacing: '0.1px', fontWeight: '500' }],
+        'mono-md': ['13px', { lineHeight: '18px', letterSpacing: '0px', fontWeight: '500' }],
+      },
+      transitionDuration: {
+        'state-change': '150ms',
+      },
+      transitionDelay: {
+        'state-change': '0ms',
+      },
+      transitionTimingFunction: {
+        'state-change': 'ease-out',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&amp;family=Noto+Serif+KR:wght@500;600&amp;family=Source+Code+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>.material-symbols-outlined, .material-symbols-rounded, .material-symbols-sharp, .material-icons { display: inline-block; width: 1em; height: 1em; line-height: 1 !important; box-sizing: content-box; overflow: hidden; white-space: nowrap; direction: ltr; vertical-align: middle; }</style>
+</head>
+<body class="bg-surface-container-low text-on-surface font-body antialiased">
+  <div class="min-h-screen flex flex-col lg:flex-row">
+    <aside class="w-full lg:w-64 lg:min-h-screen shrink-0 bg-surface border-b lg:border-b-0 lg:border-r border-outline-variant flex flex-col justify-between p-gutter-lg gap-gutter-xl">
+      <div class="flex flex-col gap-gutter-xl">
+        <div class="flex flex-col gap-gutter-xs px-gutter-sm pt-gutter-xs">
+          <div class="flex items-center gap-gutter-sm">
+            <span class="w-2.5 h-2.5 rounded-full bg-primary shrink-0" aria-hidden="true"></span>
+            <span data-design-text-token="title-md" class="font-title text-title-md text-on-surface tracking-tight">AX YOUR BODY</span>
+          </div>
+          <span data-design-text-token="mono-md" class="font-mono text-mono-md text-on-surface-variant pl-gutter-lg">m-athlete</span>
+        </div>
+
+        <nav aria-label="주 메뉴" class="flex flex-row lg:flex-col gap-gutter-xs overflow-x-auto">
+          <a href="../calm-coach-s01/WorkoutPlans.html" aria-current="page" class="flex items-center justify-between gap-gutter-sm px-gutter-md py-gutter-sm rounded-full bg-primary-container border border-primary text-on-primary-container font-label text-label-lg whitespace-nowrap">
+            <span class="flex items-center gap-gutter-sm">
+              <span class="material-symbols-outlined text-primary text-title-lg" style="font-variation-settings: &#39;FILL&#39; 1;" aria-hidden="true">event_note</span>
+              <span data-design-text-token="label-lg">운동 계획</span>
+            </span>
+            <span class="w-1.5 h-1.5 rounded-full bg-primary" aria-hidden="true"></span>
+          </a>
+
+          <span aria-disabled="true" class="flex items-center justify-between gap-gutter-sm px-gutter-md py-gutter-sm rounded-full text-on-surface-variant cursor-not-allowed whitespace-nowrap">
+            <span class="flex items-center gap-gutter-sm">
+              <span class="material-symbols-outlined text-title-lg" aria-hidden="true">fitness_center</span>
+              <span data-design-text-token="label-lg" class="font-label text-label-lg">운동 일지</span>
+            </span>
+            <span data-design-text-token="label-sm" class="font-label text-label-sm px-gutter-xs py-0.5 rounded-full bg-surface-container border border-outline-variant text-on-surface-variant">준비 중</span>
+          </span>
+
+          <a href="#body-comp" class="flex items-center justify-between gap-gutter-sm px-gutter-md py-gutter-sm rounded-full text-ink-muted hover:text-on-surface hover:bg-surface-container transition-colors duration-state-change whitespace-nowrap">
+            <span class="flex items-center gap-gutter-sm">
+              <span class="material-symbols-outlined text-title-lg" aria-hidden="true">monitoring</span>
+              <span data-design-text-token="label-lg" class="font-label text-label-lg">체성분 기록</span>
+            </span>
+            <span data-design-text-token="label-sm" class="font-label text-label-sm text-on-surface-variant">과업 2</span>
+          </a>
+
+          <a href="#consults" class="flex items-center justify-between gap-gutter-sm px-gutter-md py-gutter-sm rounded-full text-ink-muted hover:text-on-surface hover:bg-surface-container transition-colors duration-state-change whitespace-nowrap">
+            <span class="flex items-center gap-gutter-sm">
+              <span class="material-symbols-outlined text-title-lg" aria-hidden="true">forum</span>
+              <span data-design-text-token="label-lg" class="font-label text-label-lg">지난 상담</span>
+            </span>
+            <span data-design-text-token="label-sm" class="font-label text-label-sm text-on-surface-variant">과업 3</span>
+          </a>
+
+          <span aria-disabled="true" class="flex items-center justify-between gap-gutter-sm px-gutter-md py-gutter-sm rounded-full text-on-surface-variant cursor-not-allowed whitespace-nowrap">
+            <span class="flex items-center gap-gutter-sm">
+              <span class="material-symbols-outlined text-title-lg" aria-hidden="true">flag</span>
+              <span data-design-text-token="label-lg" class="font-label text-label-lg">운동 목표</span>
+            </span>
+            <span data-design-text-token="label-sm" class="font-label text-label-sm px-gutter-xs py-0.5 rounded-full bg-surface-container border border-outline-variant text-on-surface-variant">준비 중</span>
+          </span>
+        </nav>
+      </div>
+
+      <div class="hidden lg:flex flex-col gap-gutter-sm p-gutter-lg rounded-lg bg-surface-container-low border border-outline-variant">
+        <div class="flex items-center gap-gutter-xs">
+          <span class="material-symbols-outlined text-primary text-title-md" aria-hidden="true">spa</span>
+          <span data-design-text-token="label-md" class="font-label text-label-md text-on-surface">Calm Coach</span>
+        </div>
+        <p data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant text-pretty">
+          실제 기록(CSV)과 가상 시연용 계획 샘플을 구분해 표시합니다.
+        </p>
+      </div>
+    </aside>
+
+    <main class="flex-1 min-w-0 p-gutter-xl lg:p-page-margin">
+      <div class="max-w-6xl mx-auto flex flex-col gap-gutter-xl">
+        <header class="flex flex-wrap items-center justify-between gap-gutter-md pb-gutter-lg border-b border-outline-variant">
+          <div class="flex items-center gap-gutter-md">
+            <a href="../calm-coach-s02/TodayPlan.html" aria-label="오늘 운동 계획으로 돌아가기" class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-surface border border-outline hover:border-primary text-ink-muted hover:text-on-surface transition-colors duration-state-change">
+              <span class="material-symbols-outlined text-title-lg" aria-hidden="true">arrow_back</span>
+            </a>
+            <div class="flex flex-col gap-gutter-xs">
+              <div class="flex flex-wrap items-center gap-gutter-sm">
+                <h1 data-design-text-token="headline-lg" class="font-headline text-headline-lg text-on-surface">AI가 제안한 운동 계획</h1>
+                <span role="status" class="inline-flex items-center px-gutter-md py-gutter-xs rounded-full bg-primary-container border border-primary text-on-primary-container">
+                  <span data-design-text-token="label-sm" class="font-label text-label-sm">가상 시연용 예시 · 진단 아님</span>
+                </span>
+              </div>
+              <p data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant">
+                조회만으로 계획이 바뀌지 않아요. 제안 · 참고 기록 · 적용 한계를 구분해 확인한 뒤 직접 결정하세요.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-gutter-xs bg-surface border border-outline-variant rounded-full p-gutter-xs" role="group" aria-label="AI 화면 상태 시연">
+            <button type="button" data-ai-state="ready" class="ai-state-btn px-gutter-md py-gutter-xs rounded-full bg-primary-container text-on-primary-container font-label text-label-sm">제안 보기</button>
+            <button type="button" data-ai-state="loading" class="ai-state-btn px-gutter-md py-gutter-xs rounded-full text-on-surface-variant hover:text-on-surface font-label text-label-sm">로딩 상태 시연</button>
+            <button type="button" data-ai-state="outlier" class="ai-state-btn px-gutter-md py-gutter-xs rounded-full text-on-surface-variant hover:text-on-surface font-label text-label-sm">체성분 이상치 시연</button>
+          </div>
+        </header>
+
+        <section id="ai-loading-panel" class="hidden bg-surface border border-outline-variant rounded-xl p-gutter-2xl flex-col items-center text-center gap-gutter-lg">
+          <span class="material-symbols-outlined text-display-lg text-primary" aria-hidden="true">hourglass_top</span>
+          <div class="flex flex-col gap-gutter-xs max-w-lg">
+            <h2 data-design-text-token="headline-md" class="font-headline text-headline-md text-on-surface">운동·수면 기록을 확인하고 제안을 준비하고 있어요.</h2>
+            <p data-design-text-token="body-md" class="font-body text-body-md text-on-surface-variant text-pretty">
+              대기 중에는 기존 계획이 그대로 보존되며, 제안을 자동으로 적용하거나 완료로 표시하지 않아요.
+            </p>
+          </div>
+          <a href="../calm-coach-s02/TodayPlan.html" class="px-gutter-xl py-gutter-sm rounded-full bg-surface-container border border-outline text-on-surface font-label text-label-lg">
+            오늘 운동 계획으로 돌아가기
+          </a>
+        </section>
+
+        <div id="ai-ready-content" class="flex flex-col gap-gutter-xl">
+          <div id="ai-outlier-alert" role="alert" class="hidden flex-wrap items-center justify-between gap-gutter-md p-gutter-lg rounded-xl bg-warning-container border border-warning">
+            <div class="flex items-start gap-gutter-md">
+              <span class="material-symbols-outlined text-on-warning-container mt-0.5" aria-hidden="true">warning</span>
+              <div class="flex flex-col gap-gutter-xs">
+                <span data-design-text-token="label-lg" class="font-label text-label-lg text-on-warning-container">측정 조건이 달라 바로 비교하기 어려워요. (2026-10-22 시연 사례)</span>
+                <span data-design-text-token="body-sm" class="font-body text-body-sm text-on-warning-container text-pretty">
+                  10/22 골격근량 37.0kg은 비표준(저녁 · 훈련 직후) 측정이며, 10/19·10/26 표준(아침 공복) 측정은 각 36.5kg입니다. 원본은 보존되며 자동 확정하지 않아요.
+                </span>
+              </div>
+            </div>
+            <a href="#s04-body-comp" class="px-gutter-lg py-gutter-xs rounded-full bg-surface text-on-surface border border-outline font-label text-label-md">체성분 기록에서 확인하기</a>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-xl items-start">
+            <section class="lg:col-span-7 flex flex-col gap-gutter-lg">
+              <div class="bg-surface border border-primary rounded-xl p-gutter-2xl flex flex-col gap-gutter-lg">
+                <div class="flex items-center justify-between gap-gutter-sm">
+                  <div class="flex items-center gap-gutter-sm">
+                    <span class="material-symbols-outlined text-primary" aria-hidden="true">auto_awesome</span>
+                    <h2 data-design-text-token="headline-md" class="font-headline text-headline-md text-on-surface">1. AI 제안 내용</h2>
+                  </div>
+                  <span data-design-text-token="label-sm" class="font-label text-label-sm text-primary">시연용 예시 제안</span>
+                </div>
+
+                <p data-design-text-token="body-md" class="font-body text-body-md text-ink-muted text-pretty">
+                  전날 하이록스 시뮬레이션(70분, RPE 8)과 직전 수면(6.1시간)을 고려해, 주 동작 중량과 세트를 한 단계 낮춰 진행하는 안을 제안해요.
+                </p>
+
+                <div class="w-full overflow-x-auto bg-surface-container-low border border-outline-variant rounded-lg">
+                  <table class="w-full text-left border-collapse">
+                    <thead>
+                      <tr class="border-b border-outline-variant">
+                        <th scope="col" class="px-gutter-lg py-gutter-md text-on-surface-variant"><span class="font-label text-label-md">동작명</span></th>
+                        <th scope="col" class="px-gutter-lg py-gutter-md text-on-surface-variant text-right"><span class="font-label text-label-md">기존 예정</span></th>
+                        <th scope="col" class="px-gutter-lg py-gutter-md text-primary text-right"><span class="font-label text-label-md">AI 제안안</span></th>
+                      </tr>
+                    </thead>
+                    <tbody class="divide-y divide-outline-variant">
+                      <tr>
+                        <td class="px-gutter-lg py-gutter-md"><span class="text-body-md text-on-surface">백스쿼트</span></td>
+                        <td class="px-gutter-lg py-gutter-md text-right"><span class="font-mono text-mono-md tabular-nums text-on-surface-variant">102.5kg · 5×5</span></td>
+                        <td class="px-gutter-lg py-gutter-md text-right"><span class="font-mono text-mono-md tabular-nums text-on-surface">92.5kg · 5×4</span></td>
+                      </tr>
+                      <tr>
+                        <td class="px-gutter-lg py-gutter-md"><span class="text-body-md text-on-surface">루마니안 데드리프트</span></td>
+                        <td class="px-gutter-lg py-gutter-md text-right"><span class="font-mono text-mono-md tabular-nums text-on-surface-variant">92.0kg · 8×3</span></td>
+                        <td class="px-gutter-lg py-gutter-md text-right"><span class="font-mono text-mono-md tabular-nums text-on-surface">82.5kg · 8×3</span></td>
+                      </tr>
+                      <tr>
+                        <td class="px-gutter-lg py-gutter-md"><span class="text-body-md text-on-surface">레그프레스</span></td>
+                        <td class="px-gutter-lg py-gutter-md text-right"><span class="font-mono text-mono-md tabular-nums text-on-surface-variant">184.5kg · 10×3</span></td>
+                        <td class="px-gutter-lg py-gutter-md text-right"><span class="font-mono text-mono-md tabular-nums text-on-surface">184.5kg · 10×3 (유지)</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="flex flex-wrap items-center justify-between gap-gutter-sm pt-gutter-md border-t border-outline-variant">
+                  <button type="button" class="choice-btn px-gutter-lg py-gutter-sm rounded-full bg-surface-container-low border border-outline text-on-surface font-label text-label-lg">기존 계획 유지하기</button>
+                  <div class="flex flex-wrap items-center gap-gutter-sm">
+                    <button type="button" class="choice-btn px-gutter-lg py-gutter-sm rounded-full bg-surface-container-low border border-outline text-on-surface font-label text-label-lg">직접 변경하기</button>
+                    <button type="button" class="choice-btn px-gutter-xl py-gutter-sm rounded-full bg-primary text-on-primary hover:bg-primary-hover font-label text-label-lg">제안 수정 적용하기</button>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <aside class="lg:col-span-5 flex flex-col gap-gutter-md">
+              <article class="bg-surface border border-outline-variant rounded-xl p-gutter-lg flex flex-col gap-gutter-md">
+                <h2 data-design-text-token="title-md" class="font-title text-title-md text-on-surface">2. 참고한 기록과 날짜</h2>
+                <ul class="flex flex-col gap-gutter-sm">
+                  <li class="flex items-start justify-between gap-gutter-sm pb-gutter-sm border-b border-outline-variant">
+                    <span class="font-body text-body-sm text-on-surface-variant">목표 우선순위</span>
+                    <span class="font-body text-body-sm text-on-surface text-right">하체 근력 유지 · 하이록스 병행</span>
+                  </li>
+                  <li class="flex items-start justify-between gap-gutter-sm pb-gutter-sm border-b border-outline-variant">
+                    <span class="font-body text-body-sm text-on-surface-variant">전날 운동 (10/10 CSV)</span>
+                    <span class="font-mono text-mono-md tabular-nums text-on-surface text-right">하이록스 70분 · RPE 8</span>
+                  </li>
+                  <li class="flex items-start justify-between gap-gutter-sm pb-gutter-sm border-b border-outline-variant">
+                    <span class="font-body text-body-sm text-on-surface-variant">직전 수면 (10/11 CSV)</span>
+                    <span class="font-mono text-mono-md tabular-nums text-on-surface text-right">6.1시간 (10/10 기록 없음 제외)</span>
+                  </li>
+                  <li class="flex items-start justify-between gap-gutter-sm">
+                    <span class="font-body text-body-sm text-on-surface-variant">오늘 몸 상태</span>
+                    <span class="font-body text-body-sm text-on-surface text-right">컨디션 4/5 (사용자 입력)</span>
+                  </li>
+                </ul>
+              </article>
+
+              <article class="bg-surface border border-outline-variant rounded-xl p-gutter-lg flex flex-col gap-gutter-sm">
+                <div class="flex items-center gap-gutter-xs">
+                  <span class="material-symbols-outlined text-warning text-title-md" aria-hidden="true">policy</span>
+                  <h2 data-design-text-token="title-md" class="font-title text-title-md text-on-surface">3. 적용 한계 및 확인 안내</h2>
+                </div>
+                <p data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant text-pretty">
+                  제공된 기록에는 세트별 세부 피로도나 관절 통증 여부가 포함되지 않았어요. 이 제안은 의학적 진단이나 처방이 아니며, 통증이 있거나 강도 결정이 어려우면 코치 또는 전문가와 함께 확인하세요.
+                </p>
+              </article>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    (function () {
+      const loadingPanel = document.getElementById('ai-loading-panel');
+      const readyContent = document.getElementById('ai-ready-content');
+      const outlierAlert = document.getElementById('ai-outlier-alert');
+      let aiState = 'ready';
+      function updateAiState() {
+        document.querySelectorAll('.ai-state-btn').forEach((btn) => {
+          const active = btn.dataset.aiState === aiState;
+          btn.classList.toggle('bg-primary-container', active); btn.classList.toggle('text-on-primary-container', active);
+          btn.classList.toggle('text-on-surface-variant', !active);
+        });
+        loadingPanel.classList.toggle('hidden', aiState !== 'loading'); loadingPanel.classList.toggle('flex', aiState === 'loading');
+        readyContent.classList.toggle('hidden', aiState === 'loading');
+        outlierAlert.classList.toggle('hidden', aiState !== 'outlier'); outlierAlert.classList.toggle('flex', aiState === 'outlier');
+      }
+      document.querySelectorAll('.ai-state-btn').forEach((btn) => { btn.addEventListener('click', () => { aiState = btn.dataset.aiState; updateAiState(); }); });
+      document.querySelectorAll('.choice-btn').forEach((btn) => { btn.addEventListener('click', () => { window.location.href = '../calm-coach-s02/TodayPlan.html'; }); });
+    })();
+  </script>
+
+
+</body></html>
