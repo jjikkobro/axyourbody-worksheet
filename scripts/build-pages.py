@@ -60,6 +60,16 @@ if __name__ == '__main__':
     (OUT / PROTOTYPE).parent.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(ROOT / PROTOTYPE, OUT / PROTOTYPE)
     shutil.copytree(ROOT / 'tasks', OUT / 'tasks')
+    # GitHub Pages caches static assets. Change their URLs with their content.
+    asset_versions = {
+        name: hashlib.sha256((OUT / 'tasks' / name).read_bytes()).hexdigest()[:12]
+        for name in ('style.css', 'app-preview.js')
+    }
+    for page in (OUT / 'tasks').glob('*.html'):
+        content = page.read_text()
+        for name, version in asset_versions.items():
+            content = content.replace(f'"{name}"', f'"{name}?v={version}"')
+        page.write_text(content)
     readme = (ROOT / 'README.md').read_text()
     (OUT / 'README.md').write_text(readme)
     (OUT / 'process.html').write_text(render(readme, 'AX YOUR BODY · 스킬과 에이전트 작업 과정'))
