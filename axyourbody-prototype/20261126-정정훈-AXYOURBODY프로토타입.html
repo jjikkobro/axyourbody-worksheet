@@ -387,5 +387,7 @@ document.getElementById('dialog').addEventListener('keydown',e=>{if(e.key!=='Tab
 document.getElementById('dialog').addEventListener('cancel',e=>{e.preventDefault();actions['close-dialog']()});
 function hasPendingEdits(){const d=document.getElementById('dialog'),f=d.open&&d.querySelector('form');return dirty||!!(f&&JSON.stringify(Object.fromEntries(new FormData(f)))!==dialogInitial)}
 window.addEventListener('beforeunload',e=>{if(hasPendingEdits()){e.preventDefault();e.returnValue=''}});
+const requestedScreen=new URLSearchParams(location.search).get('screen');
+if(['plans','today','body','consults','log'].includes(requestedScreen))route=requestedScreen;
 render();
 </script></body></html>

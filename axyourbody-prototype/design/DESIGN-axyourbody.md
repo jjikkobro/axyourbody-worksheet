@@ -5,7 +5,7 @@ status: implemented-prototype
 updated: 2026-11-27
 language: ko-KR
 source: ../20261126-정정훈-AXYOURBODY프로토타입.html
-source_sha256: 28814c8050cc962e2d60ecc4818488f646273ad1bb28393bb43f2ca9b7055cd4
+source_sha256: e1898c110e1a7d6b38b553e202e6adab4bc19b813967de16eed5a2516569f1eb
 direction: 차분하고 간결한 운동 코치
 ---
 
