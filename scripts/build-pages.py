@@ -46,6 +46,7 @@ def render(markdown, title, prefix='', source=Path('README.md')):
             f'<title>{html.escape(title)}</title><style>{STYLE}</style><main>'
             f'<nav><a href="{prefix}index.html">프로토타입 체험</a>'
             f'<a href="{prefix}process.html">작업 과정</a>'
+            f'<a href="{prefix}tasks/index.html">과업 소개</a>'
             f'<a href="{prefix}README.md">README 원문</a></nav>'
             f'{content}</main></html>')
 
@@ -58,6 +59,7 @@ if __name__ == '__main__':
     # Keep the README's direct prototype link valid as well.
     (OUT / PROTOTYPE).parent.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(ROOT / PROTOTYPE, OUT / PROTOTYPE)
+    shutil.copytree(ROOT / 'tasks', OUT / 'tasks')
     readme = (ROOT / 'README.md').read_text()
     (OUT / 'README.md').write_text(readme)
     (OUT / 'process.html').write_text(render(readme, 'AX YOUR BODY · 스킬과 에이전트 작업 과정'))

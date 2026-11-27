@@ -1,6 +1,6 @@
 # AX YOUR BODY · 스킬과 에이전트로 작업하기
 
-[프로토타입 체험](https://jjikkobro.github.io/axyourbody-worksheet/) · [공개 작업 기록](https://jjikkobro.github.io/axyourbody-worksheet/process.html) · [제품 디자인 기준](axyourbody-prototype/design/DESIGN-axyourbody.md)
+[프로토타입 체험](https://jjikkobro.github.io/axyourbody-worksheet/) · [과업별 소개](https://jjikkobro.github.io/axyourbody-worksheet/tasks/) · [공개 작업 기록](https://jjikkobro.github.io/axyourbody-worksheet/process.html) · [제품 디자인 기준](axyourbody-prototype/design/DESIGN-axyourbody.md)
 
 > 배포 주소는 GitHub Pages용입니다. 실제 게시 상태는 저장소의 **Actions → Deploy GitHub Pages**에서 확인할 수 있습니다.
 
@@ -94,3 +94,9 @@ python3 -m http.server 3000 --directory _site
 ```
 
 최초 1회 저장소 **Settings → Pages → Source → GitHub Actions** 설정이 필요합니다. 비공개 저장소의 Pages 이용 가능 여부는 계정 플랜에 따릅니다. [GitHub 공식 설정 안내](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)를 참고하세요.
+
+## 과업별 HTML 소개
+
+[tasks/index.html](tasks/index.html)에서 확정한 일곱 과업의 개별 소개로 이동합니다. 각 페이지는 사용자 상황·문제·예시·사용 흐름·기대 결과·구현 범위를 설명합니다. 과업 2의 새 체성분 입력과 과업 4~7의 전용 흐름은 확장 설계로 표시했습니다. `tasks/`를 함께 보관하면 로컬에서도 페이지 이동과 공통 스타일이 작동합니다.
+
+소개 자료 검증: HTML 8개 × 320·390·768·1440px의 32개 화면, 로컬 링크, 본문 바로가기·이전/다음 이동을 확인했습니다. 공통 한글 글꼴과 라이선스를 포함했습니다.
