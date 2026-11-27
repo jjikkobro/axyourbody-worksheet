@@ -63,7 +63,7 @@ if __name__ == '__main__':
     # GitHub Pages caches static assets. Change their URLs with their content.
     asset_versions = {
         name: hashlib.sha256((OUT / 'tasks' / name).read_bytes()).hexdigest()[:12]
-        for name in ('style.css', 'app-preview.js')
+        for name in ('style.css',)
     }
     for page in (OUT / 'tasks').glob('*.html'):
         content = page.read_text()
