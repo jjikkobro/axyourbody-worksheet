@@ -1,5 +1,7 @@
 # AX YOUR BODY · 5인 TF 및 30회 시뮬레이션
 
+> 이 문서는 당시 검토·실행 이력입니다. 과거 verification 실행 자료와 Stitch 다운로드 시안은 2026-11-27 정리되어 본문의 옛 경로는 현재 재실행·열람 경로가 아닙니다. 삭제한 추적 파일은 Git 이력에서 확인할 수 있습니다.
+
 작성일: 2026-11-26 · 대상: `prototype-merged.html` · 비교 기준: Git 커밋 `a1bb114`의 동일 파일
 
 > 이 문서의 점수와 SHA-256은 TF 작업 당시의 스냅샷이다. 이후 AZTKS 검토에서 발견한 5개 항목의 개선과 현재 HTML 검증은 [aztks-improvements.md](aztks-improvements.md)를 따른다.

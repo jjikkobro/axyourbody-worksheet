@@ -1,7 +1,96 @@
-# axyourbody-worksheet
-AXWAVE
+# AX YOUR BODY · 스킬과 에이전트로 작업하기
 
-## AX YOUR BODY 프로토타입
+[프로토타입 체험](https://jjikkobro.github.io/axyourbody-worksheet/) · [공개 작업 기록](https://jjikkobro.github.io/axyourbody-worksheet/process.html) · [제품 디자인 기준](axyourbody-prototype/design/DESIGN-axyourbody.md)
 
-- [반응형 스탠드얼론 HTML](axyourbody-prototype/20261126-정정훈-AXYOURBODY프로토타입.html)
-- [5인 TF·30개 시나리오 비교 결과](axyourbody-prototype/docs/tf-review-30.md)
+> 배포 주소는 GitHub Pages용입니다. 실제 게시 상태는 저장소의 **Actions → Deploy GitHub Pages**에서 확인할 수 있습니다.
+
+운동 계획·수행 기록·체성분·상담을 다루는 수업 프로젝트를 Codex와 함께 발전시켰습니다. 이 저장소는 결과 화면과 함께, **사람의 결정 → 스킬로 절차 정리 → 역할별 에이전트 검토 → 실행·검증 → 목표 재설계**의 과정을 기록합니다.
+
+## 스킬을 어떻게 나누어 사용했나
+
+스킬은 반복할 작업 절차와 판단 기준을 담은 지침입니다. 에이전트는 그 지침과 주어진 역할을 바탕으로 조사·구현·검토를 수행합니다. 브라우저 검사는 구현이 정해진 조건을 만족하는지 확인하는 별도의 도구입니다.
+
+| 방식 | 사용한 상황 | 남긴 산출물 | 해석의 한계 |
+| --- | --- | --- | --- |
+| **grip-it** | 화면을 만들기 전에 핵심 과업과 미결정 사항을 정리 | 화면 분류·완료 지점·지표 등 7개 결정과 근거 | 에이전트의 권장안은 사용자 선택 전까지 제안 |
+| **5개 역할의 AI 에이전트** | 같은 화면을 서로 다른 관점에서 검토 | 역할별 6개씩 총 30개 시나리오와 개선 의견 | 실제 사용자 5명 또는 독립 전문가 평가가 아님 |
+| **AZTKS** | 구현·문구·상태·결과를 검토하고 보완 | 저장 의미, 복귀 경로, 모바일 안내 등 후속 개선 | 자체 평가이며 등급이 실행 증거를 대신하지 않음 |
+| **goal-setting** | 모호한 ‘전면 개선’을 판정 가능한 작업 지시로 전환 | 목표·규칙·종료·제약, 20개 수용 기준과 6개 완료 게이트 | 목표를 설계하는 스킬이며 구현 실행은 Codex가 담당 |
+| **GitHub Actions / Pages** | 현재 HTML과 작업 기록을 정적 사이트로 전달 | 배포 워크플로와 공개용 파일 생성 스크립트 | 배포 도구이며 디자인·사용성 검증 스킬은 아님 |
+
+근거: [grip-it 결정 기록](axyourbody-prototype/docs/grip/GRIP_REGISTER.md), [역할별 TF 검토](axyourbody-prototype/docs/tf-review-30.md), [AZTKS 후속 개선](axyourbody-prototype/docs/aztks-improvements.md), [목표 재검토](axyourbody-prototype/docs/goals/calm-coach-flow-review.md).
+
+## 1. 사람의 결정을 문서에 남기기
+
+grip-it으로 작업 범위를 핵심 과업 1~3으로 좁히고, 필수 화면과 보조 기능을 구분했습니다. 에이전트는 의존 관계가 있는 결정 토픽을 먼저 드러내고 권장안과 이유를 제시했습니다. 사용자가 선택한 내용은 결정 기록부와 워크시트에 반영했습니다.
+
+예를 들어 상담을 오늘 계획에 연결하는 행동은 참고 자료를 연결하는 것입니다. 연결만으로 운동 무게가 바뀌거나 운동이 완료되지는 않는다는 의미를 문서에 명시했습니다. 이후 구현은 이 경계를 따랐습니다.
+
+## 2. 에이전트마다 다른 질문을 맡기기
+
+초기 TF에서는 다섯 역할이 각각 6개 시나리오를 제안했습니다. 주 에이전트가 의견을 통합해 HTML을 수정하고 Chromium에서 기존안과 개선안을 비교했습니다.
+
+| 역할 | 확인한 질문의 예 |
+| --- | --- |
+| 헬스케어 기획·안전 | 조건이 다른 체성분 값을 같은 변화로 읽게 만들지 않는가? |
+| UX·비주얼 | 모바일에서 다음 행동과 저장 결과가 발견되는가? |
+| 데이터·지표 | 원본·시연값·AI 예시의 출처와 의미가 구분되는가? |
+| 접근성·포용성 | 화면 전환 초점, 한글 입력, 그래프 대체 설명이 작동하는가? |
+| 프런트엔드 QA·신뢰성 | 초안 폐기·저장 실패·손상된 저장값에서 복구할 수 있는가? |
+
+이 단계의 가치는 관점별로 다른 결함을 찾은 데 있습니다. 이후 목표 재설계와 구현 전체를 다섯 에이전트가 계속 병렬 수행했다고 해석하지 않습니다.
+
+## 3. ‘통과’한 결과에서 목표의 빈틈 찾기
+
+초기 내부 시나리오에서는 개선안이 30/30, 가중 점수 132/132를 기록했습니다. 이후 사용자 피드백은 **“과거 기록만 보여지고, 결국 뭘 해야 하는지 액션이 없다”**였습니다.
+
+기존 검사는 이미 존재하는 버튼과 저장 동작을 잘 확인했지만, 운동 여부 확인·변경 영향 판단·실제 수행 기록이라는 전체 과업의 누락까지 충분히 묻지 못했습니다. 기존 기준의 통과와 제품 목표의 충족을 구분해야 했습니다.
+
+goal-setting으로 목표를 다시 작성하며 ‘조작 가능한가’에서 ‘사용자가 운동 상태를 이해하고 다음 행동을 완료할 수 있는가’로 판정 범위를 넓혔습니다. [최종 목표](axyourbody-prototype/docs/goals/calm-coach-flow.md)에는 다음을 포함했습니다.
+
+- 계획·운동 시작 시점의 기준 계획·실제 수행을 구분하고 변경의 영향을 표시
+- 첫 진입, 진행 중, 수행 입력, 완료, 미실행, 정정과 재방문을 수용 시나리오로 연결
+- 정상 동작에 더해 취소·오류·재시도·저장 불가·손상 값·키보드 조작을 확인
+- 20개 수용 기준과 6개 완료 게이트를 모두 만족해야 완료로 판정
+
+## 4. 작업 길이와 자율성을 제한하기
+
+목표 문서에는 120분 또는 40 평가 turns의 기본 한도를 두고, 마지막 15분을 검증·기록에 배정했습니다. 예산이 끝났을 때 미완료를 완료로 보고하지 않도록 종료 사유도 정했습니다. 이는 당시 목표의 실행 예산이며 실제 소요 시간 측정값은 아닙니다.
+
+되돌릴 수 있는 로컬 UI·동작 수정은 자율 진행 범위로 두었습니다. 원자료 변경, 외부 연결, 배포·제출은 별도 경계로 명시했습니다. 이번 GitHub Pages 배포와 커밋·푸시는 이후 사용자가 별도로 요청한 작업입니다.
+
+사용자는 작업 범위, 차분하고 간결한 운동 코치 분위기, CTA 부족에 대한 문제 제기, 공개 배포 방식의 결정을 맡았습니다. 에이전트는 조사·제안·구현·검증과 기록을 맡았습니다.
+
+## 5. 검증 기록을 읽는 방법
+
+[최종 실행 보고](axyourbody-prototype/docs/calm-coach-flow-final-report.md)에는 20개 수용 기준, 6개 게이트, 47개 action, 110개 화면·상태 조합의 점검 결과가 기록되어 있습니다. [화면별 감사](axyourbody-prototype/docs/calm-coach-flow-audit.md)와 [행동 명세](axyourbody-prototype/docs/action-flow.md)에서 판정 범위를 확인할 수 있습니다.
+
+이 수치는 **당시 에이전트 실행 보고에 남은 내부 검사 결과**입니다. 현재 파일 정리 과정에서 과거 `verification/`의 스크립트·JSON·캡처는 제거되어, 보고서의 옛 실행 경로를 그대로 재실행할 수 없습니다. 당시 추적 파일은 Git 이력에 남습니다. 이번 배포 준비에서는 공개용 파일 생성·HTML 바이트 동일성·JavaScript 문법·README 로컬 링크를 확인했습니다. Chromium의 390px·1440px에서 주요 화면, 계획 저장 → 운동 시작, 새로고침, 공개 문서 링크 등 대표 점검 52개가 통과했고 JavaScript 오류는 0건이었습니다. 전체 과거 회귀를 다시 실행한 결과는 아닙니다.
+
+실제 사용자 실험, 의료적 효과, 최종 Figma 동기화 결과는 이 포트폴리오의 검증 주장에 포함하지 않습니다. AZTKS 자체 평가도 독립 심사를 뜻하지 않습니다.
+
+## 남은 문서와 정리 기준
+
+- [worksheet.md](worksheet.md): 서비스 구조·용어·핵심 과업의 기획 원본
+- [프로토타입 안내](axyourbody-prototype/README.md): 실행 파일과 현재 명세 안내
+- [DESIGN-axyourbody.md](axyourbody-prototype/design/DESIGN-axyourbody.md): 현재 HTML에서 역으로 정리한 제품 디자인 기준
+- [SCREEN_SPEC.md](axyourbody-prototype/SCREEN_SPEC.md): 화면·상태·동작 명세
+- `docs/`와 `docs/goals/`: 결정·검토·목표 변경의 근거
+
+이전 테마의 다운로드 HTML·캡처, 중복 워크시트와 화면 흐름 사본, 오래된 ZIP·초기 파일 목록은 제거했습니다. 초기 테마 참고 문서와 검토 기록은 디자인 선택의 근거로 남겼습니다. 삭제한 추적 파일은 Git 이력에서 확인할 수 있습니다.
+
+## 실행과 배포
+
+최종 HTML은 [단일 파일](axyourbody-prototype/20261126-정정훈-AXYOURBODY프로토타입.html)로 직접 열 수 있습니다. 데이터는 가상 프로필 기반이며 실제 AI API·계정·서버 동기화는 없습니다. 입력값은 해당 브라우저의 저장소를 사용하므로 로컬 파일과 공개 사이트의 저장 내용은 서로 다릅니다.
+
+GitHub Pages는 `.github/workflows/pages.yml`로 `main` 푸시 때 배포합니다. `scripts/build-pages.py`가 최종 HTML을 `_site/index.html`로 복사하고, 이 README를 공개 작업 기록으로 렌더링합니다. 원자료·이미지·ZIP을 사이트에 일괄 배포하지 않고 문서와 최종 HTML만 선택합니다.
+
+로컬에서 공개용 파일을 생성하려면:
+
+```bash
+python3 -m pip install -r scripts/requirements-pages.txt
+python3 scripts/build-pages.py
+python3 -m http.server 3000 --directory _site
+```
+
+최초 1회 저장소 **Settings → Pages → Source → GitHub Actions** 설정이 필요합니다. 비공개 저장소의 Pages 이용 가능 여부는 계정 플랜에 따릅니다. [GitHub 공식 설정 안내](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)를 참고하세요.
