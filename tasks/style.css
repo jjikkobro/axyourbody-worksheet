@@ -23,3 +23,9 @@ body:has(.task-layout)>header,body:has(.task-layout)>footer{max-width:1680px}
 .page-nav .pager-button:last-child{align-items:flex-end;text-align:right}.page-nav .pager-button:hover{background:var(--mint);border-color:var(--green)}
 .page-nav .pager-button>span{font-size:14px;font-weight:700;color:var(--green)}.page-nav .pager-button small{font-size:12px;line-height:1.5;color:var(--muted)}.page-nav .pager-count{flex-shrink:0;font-size:12px;font-variant-numeric:tabular-nums;color:var(--muted)}
 @media(max-width:720px){.page-nav{gap:10px}.page-nav .pager-button{padding:12px;max-width:42%}.page-nav .pager-button small{font-size:11px}.page-nav .pager-button>span{font-size:13px}.page-nav .pager-count{font-size:10px}.page-nav.pager-top{margin-bottom:24px;padding-bottom:20px}}
+
+/* One persistent entry point to the full prototype. */
+header{min-height:80px;padding-right:220px}
+.prototype-launch{position:fixed;top:16px;right:32px;z-index:50;min-height:48px;box-shadow:0 2px 8px #292f2914}
+@media(max-width:720px){header{padding-right:170px;align-items:center}.prototype-launch{top:16px;right:20px;min-height:44px;padding:10px 14px;font-size:13px}}
+@media(min-width:1001px){.service-preview{top:84px}.service-preview iframe{height:calc(100dvh - 300px)}}
